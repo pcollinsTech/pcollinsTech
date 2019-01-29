@@ -26,7 +26,7 @@ const Blog = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .main {
-          padding: 0 ${theme.space.inset.default};
+          padding: 30px ${theme.space.inset.default};
         }
         h1 {
           text-align: center;
