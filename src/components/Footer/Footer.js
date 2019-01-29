@@ -70,28 +70,28 @@ const Footer = props => {
           </div>
           <div className="item">
             <h2>Get in Touch</h2>
-
-            <form
-              name="contact"
-              method="post"
-              data-netlify="true"
-              data-netify-honeypot="bot-field"
-              className="contactForm"
-            >
-              <label>
-                Name:
-                <input name="name" type="text" />
-              </label>
-              <label>
-                Email:
-                <input name="email" type="email" />
-              </label>
-              <label>
-                Message:
-                <textarea name="message" cols="40" rows="7" />
-              </label>
-              <button type="submit">Send</button>
-            </form>
+            <div className="contactForm">
+              <form
+                name="contact"
+                method="post"
+                data-netlify="true"
+                data-netify-honeypot="bot-field"
+              >
+                <label>
+                  Name:
+                  <input name="name" type="text" />
+                </label>
+                <label>
+                  Email:
+                  <input name="email" type="email" />
+                </label>
+                <label>
+                  Message:
+                  <textarea name="message" cols="40" rows="7" />
+                </label>
+                <button type="submit">Send</button>
+              </form>
+            </div>
           </div>
         </div>
         <footer className="footer" dangerouslySetInnerHTML={{ __html: html }} />
