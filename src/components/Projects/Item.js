@@ -59,7 +59,7 @@ const Item = ({theme, project}) => {
             max-width: 90%;
           }
         }
-        @from-width tablet {
+        @from-width desktop {
           .item {
             max-width: 32%;
           }
