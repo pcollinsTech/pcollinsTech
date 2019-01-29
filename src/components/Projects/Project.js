@@ -50,7 +50,7 @@ const Project = ({theme}) => {
     ]
   return (
       <React.Fragment>
-          <div id="project">
+          <div id="projects">
             <h2>Projects I've worked on</h2>
             <div className="container">
                     {
@@ -64,9 +64,9 @@ const Project = ({theme}) => {
 
           {/* --- STYLES --- */}
           <style jsx>{`
-          #project{
+          #projects{
               background-color: ${theme.color.brand.primary};
-              padding: 40px;
+              padding: 50px;
           }
           h2 {
             text-align: center;

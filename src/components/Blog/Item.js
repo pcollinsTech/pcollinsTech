@@ -58,11 +58,13 @@ const Item = props => {
         .item {
           border: 1px solid transparent;
           border-radius: ${theme.size.radius.default};
-          margin: 0 auto;
+          margin: 15px auto;
           transition: all ${theme.time.duration.default};
           background: transparent;
           width:360px;
-
+          h1{
+            margin-top: 15px;
+          }
           :global(.gatsby-image-outer-wrapper) {
             border-radius: ${theme.size.radius.default};
             border: 1px solid ${theme.line.color};
