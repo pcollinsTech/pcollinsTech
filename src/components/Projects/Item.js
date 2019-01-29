@@ -7,10 +7,7 @@ const Item = ({theme, project}) => {
         <a href={project.url} target="__blank">
           <img src={project.image} alt={`${project.name}screenshot`} />
         </a>
-        <div className="project">
-          <h2>{project.name}</h2>
-          <p>{project.categories.join(" / ")}</p>
-        </div>
+        
       </div>
       {/* --- STYLES --- */}
       <style jsx>{`
