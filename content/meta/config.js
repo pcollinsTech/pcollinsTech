@@ -1,14 +1,15 @@
 module.exports = {
   siteTitle: "Pcollins.tech - Freelance Developer", // <title>
   shortSiteTitle: "Pcollins.tech - Freelance Developer", // <title> ending for posts and pages
-  siteDescription: "Freelance Developer based in Poole.",
+  siteDescription:
+    "Freelance Developer based in Bournemouth. Creating awesome  web experiences for the next generation of consumer-facing companies.",
   siteUrl: "https://pcollins.tech",
   // pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",
 
   /* author */
-  authorName: "phil collins",
+  authorName: "Phil Collins",
   authorTwitterAccount: "pcollins.tech",
 
   /* info */
@@ -32,7 +33,7 @@ module.exports = {
 
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/pcollins089" },
+    { name: "github", url: "https://github.com/pcollinsTech" },
     { name: "twitter", url: "https://twitter.com/PhilCol07472427" },
     { name: "facebook", url: "http://facebook.com/pcollins.tech" }
   ]
