@@ -13,11 +13,11 @@ const Footer = props => {
             <h2>Contact</h2>
             <br />
             <p>
-              <a href="mailto:pcollins.tech" taarget="__blank">
+              <a href="mailto:phil@pcollins.tech" taarget="__blank">
                 <span className="icon">
                   <FaEnvelope />
                 </span>
-                pcollins.tech
+                phil@pcollins.tech
               </a>
             </p>
             <p>
@@ -72,15 +72,17 @@ const Footer = props => {
         h2 {
           font-size: 30px;
         }
-        p {
-          font-size: 16px;
-        }
-        a {
-          text-decoration: none;
+        .item {
+          p {
+            font-size: 16px;
+          }
+          a {
+            text-decoration: none;
+          }
         }
         .icon {
           font-size: 18px;
-          padding: 20px 0 20px 0;
+          padding: 20px 10px 20px 0;
         }
         .iconSocial {
           font-size: 20px;
@@ -130,7 +132,7 @@ const Footer = props => {
           .footer {
             padding: 1em 1em 0 1em;
           }
-          p {
+          .item p {
             font-size: 20px;
           }
           .icon {
