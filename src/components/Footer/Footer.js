@@ -69,8 +69,8 @@ const Footer = props => {
             </div>
           </div>
           <div className="item">
-            <h2>Contact Me</h2>
-            
+            <h2>Get in Touch</h2>
+
             <form
               name="contact"
               method="post"
@@ -101,6 +101,7 @@ const Footer = props => {
       <style jsx>{`
         .contactinfo {
           padding-top: 30px;
+          margin-bottom: 50px;
         }
         hr {
           margin: 10px;
@@ -119,7 +120,6 @@ const Footer = props => {
           justify-content: space-between;
         }
         .contactForm {
-          margin-bottom: 20px;
           button {
             margin: 10px 5px 10px 0;
             padding: 8px 13px;
@@ -166,7 +166,7 @@ const Footer = props => {
         }
         .container {
           margin: 0 auto;
-          padding-bottom: 2em;
+          padding-bottom: 130px;
           max-width: ${theme.text.maxWidth.homepage};
           .item {
             text-align: left;
@@ -204,11 +204,12 @@ const Footer = props => {
           }
           .contactinfo {
             margin-top: 80px;
+            margin-bottom: 0px;
           }
-          .container{
+          .container {
             display: flex;
             justify-content: space-around;
-            .item{
+            .item {
               width: 40%;
             }
           }
