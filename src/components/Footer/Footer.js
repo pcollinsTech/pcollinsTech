@@ -7,71 +7,91 @@ const Footer = props => {
 
   return (
     <React.Fragment>
-      <div className="main">
+      <div className="main" id="contact">
         <div className="container">
           <div className="item">
-            <h2>Contact</h2>
+            <h2>Social Media</h2>
             <br />
-            {/* <form
+            <div className="socialgroup">
+              <a
+                href="https://www.facebook.com/pcollins.tech/"
+                taarget="__blank"
+                className="social"
+              >
+                <span className="iconSocial">
+                  <FaFacebook />
+                </span>
+              </a>
+              <a
+                href="https://www.instagram.com/pcollins.tech/"
+                taarget="__blank"
+                className="social"
+              >
+                <span className="iconSocial">
+                  <FaInstagram />
+                </span>
+              </a>
+              <a
+                href="https://www.twitter.com/pcollins.tech/"
+                taarget="__blank"
+                className="social"
+              >
+                <span className="iconSocial">
+                  <FaTwitter />
+                </span>
+              </a>
+              <a href="https://www.github.com/pcollinsTech/" taarget="__blank" className="social">
+                <span className="iconSocial">
+                  <FaGithub />
+                </span>
+              </a>
+            </div>
+
+            <div className="contactinfo">
+              <h2>Contact Information</h2>
+              <br />
+              <p>
+                <a href="mailto:phil@pcollins.tech" taarget="__blank">
+                  <span className="icon">
+                    <FaEnvelope />
+                  </span>
+                  phil@pcollins.tech
+                </a>
+              </p>
+              <p>
+                <a href="tel:07944305605" taarget="__blank">
+                  <span className="icon">
+                    <FaPhone />
+                  </span>
+                  07944305605
+                </a>
+              </p>
+            </div>
+          </div>
+          <div className="item">
+            <h2>Contact Me</h2>
+            
+            <form
               name="contact"
               method="post"
               data-netlify="true"
               data-netify-honeypot="bot-field"
+              className="contactForm"
             >
-              <input name="name" paceholder="Your name.." type="text"/>
-              <input name="email" placeholder="Your email.." type="email"/>
-              <textarea name="message" placeholder="Your message.." cols="30" rows="10"></textarea>
-              <button>Send</button>
-            </form> */}
-            <p>
-              <a href="mailto:phil@pcollins.tech" taarget="__blank">
-                <span className="icon">
-                  <FaEnvelope />
-                </span>
-                phil@pcollins.tech
-              </a>
-            </p>
-            <p>
-              <a href="tel:07944305605" taarget="__blank">
-                <span className="icon">
-                  <FaPhone />
-                </span>
-                07944305605
-              </a>
-            </p>
-          </div>
-          <div className="item">
-            <h2>Social</h2>
-            <br />
-
-            <a
-              href="https://www.facebook.com/pcollins.tech/"
-              taarget="__blank"
-              className="social"
-            >
-              <span className="iconSocial">
-                <FaFacebook />
-              </span>
-            </a>
-            <a
-              href="https://www.instagram.com/pcollins.tech/"
-              taarget="__blank"
-              className="social"
-            >
-              <span className="iconSocial">
-                <FaInstagram />
-              </span>
-            </a>
-            <a href="https://www.twitter.com/pcollins.tech/" taarget="__blank" className="social">
-              <span className="iconSocial">
-                <FaTwitter />
-              </span>
-            </a>
-            <a href="https://www.github.com/pcollinsTech/" taarget="__blank" className="social">
-              <span className="iconSocial">
-                <FaGithub />
-              </span>
-            </a>
+              <label>
+                Name:
+                <input name="name" type="text" />
+              </label>
+              <label>
+                Email:
+                <input name="email" type="email" />
+              </label>
+              <label>
+                Message:
+                <textarea name="message" cols="40" rows="7" />
+              </label>
+              <button type="submit">Send</button>
+            </form>
           </div>
         </div>
         <footer className="footer" dangerouslySetInnerHTML={{ __html: html }} />
@@ -79,43 +99,77 @@ const Footer = props => {
 
       {/* --- STYLES --- */}
       <style jsx>{`
+        .contactinfo {
+          padding-top: 30px;
+        }
+        hr {
+          margin: 10px;
+          color: ${theme.color.brand.secondary};
+        }
         .main {
           background: ${theme.color.brand.primary};
           padding: ${theme.space.inset.default};
           text-align: center;
           color: ${theme.color.neutral.gray.g};
         }
+        .socialgroup {
+          .padding-top: 60px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+        .contactForm {
+          margin-bottom: 20px;
+          button {
+            margin: 10px 5px 10px 0;
+            padding: 8px 13px;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            float: right;
+          }
+          button:hover {
+            cursor: pointer;
+            background-color: ${theme.color.brand.secondary};
+          }
+          textarea,
+          input {
+            width: 100%;
+            margin: 10px 5px 10px 0;
+            padding: 8px 5px;
+            border: none;
+            border-radius: 5px;
+          }
+        }
         h2 {
+          text-align: center;
           font-size: 30px;
         }
         .item {
           p {
-            font-size: 16px;
+            font-size: 22px;
           }
           a {
             text-decoration: none;
           }
         }
         .icon {
-          font-size: 18px;
-          padding: 20px 10px 20px 0;
+          font-size: 25px;
+          padding: 30px 20px 30px 0;
         }
         .iconSocial {
-          font-size: 20px;
-          padding: 20px 5px 20px 0;
+          font-size: 35px;
+          padding: 20px 20px 20px 0;
         }
         a:hover {
           color: ${theme.color.brand.secondary};
         }
         .container {
           margin: 0 auto;
-          display: flex;
-          justify-content: space-between;
           padding-bottom: 2em;
           max-width: ${theme.text.maxWidth.homepage};
           .item {
             text-align: left;
-            width: 390px;
             padding: 0 20px;
           }
         }
@@ -148,16 +202,15 @@ const Footer = props => {
           .footer {
             padding: 1em 1em 0 1em;
           }
-          .item p {
-            font-size: 20px;
+          .contactinfo {
+            margin-top: 80px;
           }
-          .icon {
-            font-size: 25px;
-            padding: 30px 20px 30px 0;
-          }
-          .iconSocial {
-            font-size: 35px;
-            padding: 20px 20px 20px 0;
+          .container{
+            display: flex;
+            justify-content: space-around;
+            .item{
+              width: 40%;
+            }
           }
         }
       `}</style>
