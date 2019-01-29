@@ -12,7 +12,7 @@ const Footer = props => {
           <div className="item">
             <h2>Contact</h2>
             <br />
-            <form
+            {/* <form
               name="contact"
               method="post"
               data-netlify="true"
@@ -22,7 +22,7 @@ const Footer = props => {
               <input name="email" placeholder="Your email.." type="email"/>
               <textarea name="message" placeholder="Your message.." cols="30" rows="10"></textarea>
               <button>Send</button>
-            </form>
+            </form> */}
             <p>
               <a href="mailto:phil@pcollins.tech" taarget="__blank">
                 <span className="icon">
