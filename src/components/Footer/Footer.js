@@ -103,6 +103,9 @@ const Footer = props => {
           padding-top: 30px;
           margin-bottom: 50px;
         }
+        footer {
+          padding-bottom: 4em;
+        }
         hr {
           margin: 10px;
           color: ${theme.color.brand.secondary};
@@ -120,6 +123,7 @@ const Footer = props => {
           justify-content: space-between;
         }
         .contactForm {
+          padding-top: 22px;
           button {
             margin: 10px 5px 10px 0;
             padding: 8px 13px;
@@ -166,7 +170,7 @@ const Footer = props => {
         }
         .container {
           margin: 0 auto;
-          padding-bottom: 130px;
+          padding-bottom: 65px;
           max-width: ${theme.text.maxWidth.homepage};
           .item {
             text-align: left;
