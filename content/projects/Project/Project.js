@@ -7,6 +7,7 @@ import Headline from "../Article/Headline";
 import Bodytext from "../Article/Bodytext";
 import Meta from "./Meta";
 import NextPrev from "./NextPrev";
+import WorkTogetherFooter from "../WorkTogetherFooter";
 
 const Share = asyncComponent(() =>
   import("./Share")
@@ -39,6 +40,7 @@ const Project = props => {
       </header>
       <Bodytext html={html} theme={theme} />
       <footer>
+        <WorkTogetherFooter theme={theme} />
         <NextPrev next={nextProject} prev={prevProject} theme={theme} />
       </footer>
     </React.Fragment>

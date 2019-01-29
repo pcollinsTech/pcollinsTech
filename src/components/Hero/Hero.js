@@ -9,17 +9,24 @@ import logoWhite from "../../images/png/logoWhite.png";
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
 
-  return <React.Fragment>
+  return (
+    <React.Fragment>
       <section className="hero">
         <div className="text">
           <h1>
-            Hi, I'm Phil Collins<br />
-            I'm a <span>Freelance Developer</span>
+            <span className="name">PHIL COLLINS</span>
+            <br />
+            <span>Freelance Developer</span>
           </h1>
+          <br
+            style={{
+              margin: "10px 0"
+            }}
+          />
           {/* <img src={logoWhite} alt={config.siteTitle}/> */}
           <h2>
-            I'm creating awesome web experiences for the next generation of consumer-facing
-            companies.
+            Creating <span>awesome</span> web experiences for the next generation of
+            consumer-facing companies.
           </h2>
         </div>
         <div className="arrow">
@@ -31,6 +38,9 @@ const Hero = props => {
 
       {/* --- STYLES --- */}
       <style jsx>{`
+        .name {
+          font-size: 55px;
+        }
         .hero {
           align-items: center;
           background: ${theme.hero.background};
@@ -78,13 +88,16 @@ const Hero = props => {
         }
         h2 {
           text-align: center;
-          color: white;
+          color: #d6cfcb;
           padding: 0 0 20px 0;
           font-size: ${theme.hero.h1.size};
           line-height: ${theme.hero.h1.lineHeight};
           transform-origin: 50% 50% 0;
           transform: translate3d(0, 0, 0);
           text-shadow: 2px 2px #000;
+          span {
+            font-size: 34px;
+          }
         }
 
         button {
@@ -115,7 +128,8 @@ const Hero = props => {
           }
         }
 
-        @keyframes buttonIconMove {0% {
+        @keyframes buttonIconMove {
+          0% {
             transform: translateY(0);
           }
           50% {
@@ -123,9 +137,11 @@ const Hero = props => {
           }
           100% {
             transform: translateY(0);
-          }}
+          }
+        }
 
-        @from-width tablet {.hero {
+        @from-width tablet {
+          .hero {
             background-image: url(${backgrounds.tablet});
           }
 
@@ -136,9 +152,11 @@ const Hero = props => {
 
           button {
             font-size: ${theme.font.size.l};
-          }}
+          }
+        }
 
-        @from-width desktop {.hero {
+        @from-width desktop {
+          .hero {
             background-image: url(${backgrounds.desktop});
           }
 
@@ -151,8 +169,11 @@ const Hero = props => {
           button {
             margin-bottom: -250px;
             font-size: ${theme.font.size.xl};
-          }}`}</style>
-    </React.Fragment>;
+          }
+        }
+      `}</style>
+    </React.Fragment>
+  );
 };
 
 Hero.propTypes = {

@@ -6,6 +6,7 @@ import Blog from "../components/Blog";
 import Hero from "../components/Hero";
 import Seo from "../components/Seo";
 import Services from "../components/Services";
+import Project from "../components/Projects/Project";
 
 
 class IndexPage extends React.Component {
@@ -55,6 +56,10 @@ class IndexPage extends React.Component {
 
         <ThemeContext.Consumer>
           {theme => <Services theme={theme} />}
+        </ThemeContext.Consumer>
+
+        <ThemeContext.Consumer>
+          {theme => <Project theme={theme}/>}
         </ThemeContext.Consumer>
         
         <ThemeContext.Consumer>

@@ -8,7 +8,7 @@ const Blog = props => {
 
   return (
     <React.Fragment>
-      <main className="main">
+      <main className="main" id="blog">
       <h1>Blog</h1>
         <div>
           {posts.map(post => {
