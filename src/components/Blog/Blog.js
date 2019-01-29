@@ -9,7 +9,7 @@ const Blog = props => {
   return (
     <React.Fragment>
       <main className="main" id="blog">
-      <h1>Blog</h1>
+        <h2>Blog</h2>
         <div>
           {posts.map(post => {
             const {
@@ -26,16 +26,17 @@ const Blog = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .main {
-          padding: 50px ${theme.space.inset.default};
+          padding: 50px;
         }
-        h1 {
+        h2 {
+          font-size: 30px;
           text-align: center;
-          margin: 20px 0;
+          margin-bottom: 40px;
         }
 
         div {
-          display:flex;
-          flex-wrap:wrap;
+          display: flex;
+          flex-wrap: wrap;
           justify-content: space-between;
           list-style: none;
           margin: 0 auto;
@@ -44,13 +45,16 @@ const Blog = props => {
 
         @above tablet {
           .main {
-            padding: 0 ${`0 calc(${theme.space.default} * 1.5)`};
+            padding: 50px;
           }
           div {
             max-width: ${theme.text.maxWidth.tablet};
           }
         }
         @above desktop {
+          .main {
+            padding: 50px;
+          }
           div {
             max-width: ${theme.text.maxWidth.homepage};
           }

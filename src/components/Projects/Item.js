@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Img from "gatsby-image";
 const Item = ({theme, project}) => {
   return (
     <React.Fragment>

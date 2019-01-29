@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhone } from "react-icons/fa/";
+import { FaFacebook, FaInstagram, FaTwitter, FaEnvelope, FaPhone, FaGithub } from "react-icons/fa/";
 
 const Footer = props => {
   const { html, theme } = props;
@@ -12,6 +12,17 @@ const Footer = props => {
           <div className="item">
             <h2>Contact</h2>
             <br />
+            <form
+              name="contact"
+              method="post"
+              data-netlify="true"
+              data-netify-honeypot="bot-field"
+            >
+              <input name="name" paceholder="Your name.." type="text"/>
+              <input name="email" placeholder="Your email.." type="email"/>
+              <textarea name="message" placeholder="Your message.." cols="30" rows="10"></textarea>
+              <button>Send</button>
+            </form>
             <p>
               <a href="mailto:phil@pcollins.tech" taarget="__blank">
                 <span className="icon">
@@ -54,6 +65,11 @@ const Footer = props => {
             <a href="https://www.twitter.com/pcollins.tech/" taarget="__blank" className="social">
               <span className="iconSocial">
                 <FaTwitter />
+              </span>
+            </a>
+            <a href="https://www.github.com/pcollinsTech/" taarget="__blank" className="social">
+              <span className="iconSocial">
+                <FaGithub />
               </span>
             </a>
           </div>

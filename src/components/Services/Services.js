@@ -29,30 +29,30 @@ const Services = props => {
               <img src={hosting} />
               <h2>Hosting</h2>
               <p>
-                Does your new website needs a home? I can offer Domain name and hosting service
-                that is reliable, affordable and secure.
+                Does your new website or webs application need a home? I can offer Domain name and hosting services
+                that are reliable, affordable and secure.
               </p>
             </div>
             <div className="item">
               <img src={marketing} />
               <h2>Training</h2>
               <p>
-                I can deliver one-to-one training, either in person or over Skype to help you
-                with any issues you may have with using your website.
+                I offer one-to-one or group training, either in person or over Skype to help you
+                with any issues you may have with getting online or optimising your website.
               </p>
             </div>
             <div className="item">
               <img src={optimised} />
               <h2>Optimised</h2>
               <p>
-                The performance of your website plays a key role in whether users decide to
+                The performance of your website plays a key role in whether your users decide to
                 stick around or move onto your competition. Faster loading pages are great for
-                SEO and deliver a better User Experience.
+                SEO and deliver a better overall User Experience.
               </p>
             </div>
             <div className="item">
               <img src={responsive} />
-              <h2>Responsive</h2>
+              <h2>Responsive Design</h2>
               <p>
                 All of my recent websites are responsive. This means that the layout changes and
                 adapts according to the screen size of the visitor. This allows for a better
@@ -63,8 +63,8 @@ const Services = props => {
               <img src={seo} />
               <h2>Seo</h2>
               <p>
-                My websites are designed and coded to be search-engine friendly. They often
-                achieve excellent Google rankings within a few weeks of launch. For more
+                My websites are designed to be search-engine friendly. They often
+                achieve excellent rankings within a few weeks of launch. For more
                 competitive markets I can recommend an SEO specialist to give you a little extra
                 help.
               </p>

@@ -58,7 +58,7 @@ const Item = props => {
         .item {
           border: 1px solid transparent;
           border-radius: ${theme.size.radius.default};
-          margin: 15px auto;
+          margin: 0 auto 15px auto;
           transition: all ${theme.time.duration.default};
           background: transparent;
           width:360px;
