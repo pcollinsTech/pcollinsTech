@@ -23,7 +23,7 @@ const Item = ({theme, project}) => {
           max-width: 100%;
         }
         .item {
-          max-width: 32%;
+         
           margin-bottom: 14px;
         }
         .project {
@@ -57,6 +57,11 @@ const Item = ({theme, project}) => {
         @from-width tablet {
           .item {
             max-width: 90%;
+          }
+        }
+        @from-width tablet {
+          .item {
+            max-width: 32%;
           }
         }
       `}</style>

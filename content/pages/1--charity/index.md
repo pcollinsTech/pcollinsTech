@@ -1,6 +1,6 @@
 ---
-title: Charity Tuesday 
-menuTitle: Charity Work
+title: Referral Scheme
+menuTitle: Referral Scheme
 ---
 
 Hello! If you are new to this, then "Charity Tuesday" is an initiative of mine where I offer my skills and services to charities or non-profit organisations in and around Poole / Bounemouth. I do this on the first Tuesday of every month.
