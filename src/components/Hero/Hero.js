@@ -18,13 +18,13 @@ const Hero = props => {
               <span>Freelance Developer</span>
               <Typing.Delay ms={1000} />
               <Typing.Backspace count={19} />
-              <span>Website Coach</span>
+              <span>Website Training</span>
               <Typing.Delay ms={1000} />
               <Typing.Backspace count={19} />
               <span>Freelance Developer</span>
               <Typing.Delay ms={1000} />
               <Typing.Backspace count={19} />
-              <span>Website Coach</span>
+              <span>Website Training</span>
             </Typing>
           </h1>
           <br
