@@ -4,7 +4,7 @@ module.exports = {
   siteDescription:
     "Freelance Developer based in Bournemouth. Creating awesome  web experiences for the next generation of consumer-facing companies.",
   siteUrl: "https://pcollins.tech",
-  // pathPrefix: "",
+  pathPrefix: "/",
   siteImage: "preview.jpg",
   siteLanguage: "en",
 
