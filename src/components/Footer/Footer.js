@@ -7,13 +7,10 @@ const Footer = props => {
 
   return (
     <React.Fragment>
-      <div className="main" id="contact">
+      <div className="main" >
         <div className="container">
           <div className="item">
-            
-           
             <div className="contactinfo">
-              <h2>Contact Information</h2>
               <br />
               <p>
                 <a href="mailto:phil@pcollins.tech" taarget="__blank">
@@ -32,65 +29,47 @@ const Footer = props => {
                 </a>
               </p>
             </div>
-            <div className="socialgroup">
-              <a
-                href="https://www.facebook.com/pcollins.tech/"
-                taarget="__blank"
-                className="social"
-              >
-                <span className="iconSocial">
-                  <FaFacebook />
-                </span>
-              </a>
-              <a
-                href="https://www.instagram.com/pcollins.tech/"
-                taarget="__blank"
-                className="social"
-              >
-                <span className="iconSocial">
-                  <FaInstagram />
-                </span>
-              </a>
-              <a
-                href="https://www.twitter.com/pcollins.tech/"
-                taarget="__blank"
-                className="social"
-              >
-                <span className="iconSocial">
-                  <FaTwitter />
-                </span>
-              </a>
-              <a href="https://www.github.com/pcollinsTech/" taarget="__blank" className="social">
-                <span className="iconSocial">
-                  <FaGithub />
-                </span>
-              </a>
-            </div>
-
           </div>
           <div className="item">
-            <h2>Get in Touch</h2>
-            <div className="contactForm">
-              <form
-                name="contact"
-                method="post"
-                data-netlify="true"
-                data-netify-honeypot="bot-field"
-              >
-                <label>
-                  Name:
-                  <input name="name" type="text" />
-                </label>
-                <label>
-                  Email:
-                  <input name="email" type="email" />
-                </label>
-                <label>
-                  Message:
-                  <textarea name="message" cols="40" rows="7" />
-                </label>
-                <button type="submit">Send</button>
-              </form>
+            <div className="socialgroup">
+              <div className="socialIcons">
+                <a
+                  href="https://www.facebook.com/pcollins.tech/"
+                  taarget="__blank"
+                  className="social"
+                >
+                  <span className="iconSocial">
+                    <FaFacebook />
+                  </span>
+                </a>
+                <a
+                  href="https://www.instagram.com/pcollins.tech/"
+                  taarget="__blank"
+                  className="social"
+                >
+                  <span className="iconSocial">
+                    <FaInstagram />
+                  </span>
+                </a>
+                <a
+                  href="https://www.twitter.com/pcollins.tech/"
+                  taarget="__blank"
+                  className="social"
+                >
+                  <span className="iconSocial">
+                    <FaTwitter />
+                  </span>
+                </a>
+                <a
+                  href="https://www.github.com/pcollinsTech/"
+                  taarget="__blank"
+                  className="social"
+                >
+                  <span className="iconSocial">
+                    <FaGithub />
+                  </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -105,10 +84,7 @@ const Footer = props => {
         footer {
           padding-bottom: 4em;
         }
-        hr {
-          margin: 10px;
-          color: ${theme.color.brand.secondary};
-        }
+
         .main {
           background: ${theme.color.brand.primary};
           padding: ${theme.space.inset.default};
@@ -116,39 +92,14 @@ const Footer = props => {
           color: ${theme.color.neutral.gray.g};
         }
         .socialgroup {
-          position: absolute;
-          bottom: 0;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-        }
-        .contactForm {
-          padding-top: 22px;
-          button {
-            margin: 10px 5px 10px 0;
-            padding: 8px 13px;
-            border-radius: 5px;
-            border: none;
-            font-size: 20px;
+          width:100%;
+          margin-top: 50px;
+          .socialIcons{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             float: right;
           }
-          button:hover {
-            cursor: pointer;
-            background-color: ${theme.color.brand.secondary};
-          }
-          textarea,
-          input {
-            font-size: 20px;
-            width: 100%;
-            margin: 10px 5px 10px 0;
-            padding: 8px 5px;
-            border: none;
-            border-radius: 5px;
-          }
-        }
-        h2 {
-          text-align: center;
-          font-size: 30px;
         }
         .item {
           position: relative;
@@ -171,8 +122,10 @@ const Footer = props => {
           color: ${theme.color.brand.secondary};
         }
         .container {
+          display: flex;
+          justify-content: space-between;
           margin: 0 auto;
-          padding-bottom: 65px;
+          padding-bottom: 35px;
           max-width: ${theme.text.maxWidth.homepage};
           .item {
             text-align: left;
@@ -212,8 +165,6 @@ const Footer = props => {
             margin-bottom: 0px;
           }
           .container {
-            display: flex;
-            justify-content: space-around;
             .item {
               width: 40%;
             }

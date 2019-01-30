@@ -26,8 +26,8 @@ const AboutPage = props => {
                 <p className="aboutParagraph">
                   I'm Phil Collins. Not the singer unfortunately, but the developer. I live and
                   work mostly in Bournemouth, whilst hopping to and from Belfast, Northern Ireland
-                  (where I'm from). Before I started out building websites and chatbots, I was
-                  working as a chef in the french alps.
+                  (where I'm from). Before I started out building websites, chatbots and apps, I
+                  was working as a chef in the french alps.
                 </p>
                 <p className="aboutParagraph">
                   Yep, you read that right. A pretty huge career change, but i pulled it off. I
@@ -55,6 +55,27 @@ const AboutPage = props => {
                   Creative flair is something I have long since held, having worked as a chef and
                   then latterly as a developer. So I have got a keen eye for those all important
                   design touches that can help make a website stand out and engage its user base.
+                </p>
+                <p className="aboutParagraph">
+                  Whilst working as a Chef, I realised I have a strong passion for teaching
+                  people. I always found myself helping out any new members of staff and teaching
+                  them how to do certain dishes/techniques. This give me a huge sense of
+                  achievement/joy/pleasure.
+                </p>
+                <p className="aboutParagraph">
+                  When I was living in the Alps I had friends and family come out to visit me on
+                  holiday. It was great to see them and spend time with them. I always ended up
+                  being the snowboard / ski instructor for the week. It gave me such joy to share
+                  my knowledge and see their progression.
+                </p>
+                <p className="aboutParagraph">
+                  Learning to code has enabled me to combine the 2 passions I have in life, Learning everyday and
+                  sharing my knowledge with others.  
+                </p>
+                <p className="aboutParagraph">
+                  If you are looking to get your business online or want to find out more on how you can
+                  add functionalit to an existing website yourself, get in touch! I'm be more than happy
+                  to help!
                 </p>
               </div>
             </section>

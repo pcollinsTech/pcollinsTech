@@ -7,6 +7,7 @@ import { graphql, StaticQuery } from "gatsby";
 import { getScreenWidth, timeoutThrottlerHandler } from "../utils/helpers";
 import Footer from "../components/Footer/";
 import Header from "../components/Header";
+import Contact from "../components/Contact/Contact";
 
 export const ThemeContext = React.createContext(null);
 export const ScreenWidthContext = React.createContext(0);
@@ -121,6 +122,7 @@ class Layout extends React.Component {
                       theme={this.state.theme}
                     />
                     <main>{children}</main>
+                    <Contact theme={this.state.theme} />
                     <Footer html={footnoteHTML} theme={this.state.theme} />
 
                     {/* --- STYLES --- */}
