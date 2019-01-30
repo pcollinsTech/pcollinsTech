@@ -1,13 +1,14 @@
 import React from 'react'
-import Img from "gatsby-image";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
+
+
 const Item = ({theme, project}) => {
   return (
     <React.Fragment>
       <div className="item">
-        <a href={project.url} target="__blank">
+        <OutboundLink href={project.url} target="__blank">
           <img src={project.image} alt={`${project.name}screenshot`} />
-        </a>
-        
+        </OutboundLink>
       </div>
       {/* --- STYLES --- */}
       <style jsx>{`
@@ -20,7 +21,6 @@ const Item = ({theme, project}) => {
           max-width: 100%;
         }
         .item {
-         
           margin-bottom: 14px;
         }
         .project {

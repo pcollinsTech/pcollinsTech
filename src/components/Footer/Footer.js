@@ -10,8 +10,28 @@ const Footer = props => {
       <div className="main" id="contact">
         <div className="container">
           <div className="item">
-            <h2>Social Media</h2>
-            <br />
+            
+           
+            <div className="contactinfo">
+              <h2>Contact Information</h2>
+              <br />
+              <p>
+                <a href="mailto:phil@pcollins.tech" taarget="__blank">
+                  <span className="icon">
+                    <FaEnvelope />
+                  </span>
+                  phil@pcollins.tech
+                </a>
+              </p>
+              <p>
+                <a href="tel:07944305605" taarget="__blank">
+                  <span className="icon">
+                    <FaPhone />
+                  </span>
+                  07944305605
+                </a>
+              </p>
+            </div>
             <div className="socialgroup">
               <a
                 href="https://www.facebook.com/pcollins.tech/"
@@ -47,26 +67,6 @@ const Footer = props => {
               </a>
             </div>
 
-            <div className="contactinfo">
-              <h2>Contact Information</h2>
-              <br />
-              <p>
-                <a href="mailto:phil@pcollins.tech" taarget="__blank">
-                  <span className="icon">
-                    <FaEnvelope />
-                  </span>
-                  phil@pcollins.tech
-                </a>
-              </p>
-              <p>
-                <a href="tel:07944305605" taarget="__blank">
-                  <span className="icon">
-                    <FaPhone />
-                  </span>
-                  07944305605
-                </a>
-              </p>
-            </div>
           </div>
           <div className="item">
             <h2>Get in Touch</h2>
@@ -100,7 +100,6 @@ const Footer = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .contactinfo {
-          padding-top: 30px;
           margin-bottom: 50px;
         }
         footer {
@@ -117,7 +116,8 @@ const Footer = props => {
           color: ${theme.color.neutral.gray.g};
         }
         .socialgroup {
-          .padding-top: 60px;
+          position: absolute;
+          bottom: 0;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
@@ -138,6 +138,7 @@ const Footer = props => {
           }
           textarea,
           input {
+            font-size: 20px;
             width: 100%;
             margin: 10px 5px 10px 0;
             padding: 8px 5px;
@@ -150,6 +151,7 @@ const Footer = props => {
           font-size: 30px;
         }
         .item {
+          position: relative;
           p {
             font-size: 22px;
           }
@@ -207,7 +209,6 @@ const Footer = props => {
             padding: 1em 1em 0 1em;
           }
           .contactinfo {
-            margin-top: 80px;
             margin-bottom: 0px;
           }
           .container {
