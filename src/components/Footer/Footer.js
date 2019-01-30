@@ -7,7 +7,7 @@ const Footer = props => {
 
   return (
     <React.Fragment>
-      <div className="main" >
+      <div className="main">
         <div className="container">
           <div className="item">
             <div className="contactinfo">
@@ -92,9 +92,8 @@ const Footer = props => {
           color: ${theme.color.neutral.gray.g};
         }
         .socialgroup {
-          width:100%;
-          margin-top: 50px;
-          .socialIcons{
+          width: 100%;
+          .socialIcons {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -123,6 +122,7 @@ const Footer = props => {
         }
         .container {
           display: flex;
+          flex-wrap: wrap;
           justify-content: space-between;
           margin: 0 auto;
           padding-bottom: 35px;
@@ -160,6 +160,9 @@ const Footer = props => {
         @from-width desktop {
           .footer {
             padding: 1em 1em 0 1em;
+          }
+          .socialgroup {
+            margin-top: 50px;
           }
           .contactinfo {
             margin-bottom: 0px;
