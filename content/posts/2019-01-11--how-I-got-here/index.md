@@ -36,7 +36,6 @@ A chef uses multiple recipes in and a dish:
 	* Pea puree
 	* Pan fried scallops
 	* Roasted lemon puree
-![pcollins.tech/photo-salmon.jpg](./photo-salmon.jpg)
 
 **Basic Concepts:** Cooking and coding have some basic concepts that are important to understand.  Some basic skills for cooking would be knowing your knives and cuts, making a reux, knowing the different cooking techniques (roasting, frying, blanching…). Some basic coding skills would be knowing how to set up an HTML page, navigating through your editor and the console, how to troubleshoot, and more.
 
