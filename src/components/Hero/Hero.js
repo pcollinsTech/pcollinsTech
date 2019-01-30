@@ -15,16 +15,17 @@ const Hero = props => {
             <span className="name">PHIL COLLINS</span>
             <br />
             <Typing>
+             
               <span>Freelance Developer</span>
-              <Typing.Delay ms={1000} />
+              <Typing.Delay ms={2000} />
               <Typing.Backspace count={19} />
-              <span>Website Training</span>
-              <Typing.Delay ms={1000} />
-              <Typing.Backspace count={19} />
+              <span>Website Development Training</span>
+              <Typing.Delay ms={2000} />
+              <Typing.Backspace count={28} />
               <span>Freelance Developer</span>
-              <Typing.Delay ms={1000} />
+              <Typing.Delay ms={2000} />
               <Typing.Backspace count={19} />
-              <span>Website Training</span>
+              <span>Website Development Training</span>
             </Typing>
           </h1>
           <br
@@ -69,7 +70,6 @@ const Hero = props => {
           flex-flow: column nowrap;
           justify-content: space-around;
           align-items: center;
-          padding-top: ${theme.header.height.homepage};
         }
         h1 {
           text-align: center;
@@ -98,14 +98,14 @@ const Hero = props => {
         h2 {
           text-align: center;
           color: #d6cfcb;
-          padding: 0 0 20px 0;
-          font-size: ${theme.hero.h1.size};
+          padding: 0 0 30px 0;
+          font-size: 1.5em;
           line-height: ${theme.hero.h1.lineHeight};
           transform-origin: 50% 50% 0;
           transform: translate3d(0, 0, 0);
           text-shadow: 2px 2px #000;
           span {
-            font-size: 34px;
+            font-size: 30px;
           }
         }
 
