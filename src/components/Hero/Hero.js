@@ -1,10 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import config from "../../../content/meta/config";
-
+import Typing from 'react-typing-animation'
 import { FaArrowDown } from "react-icons/fa/";
 
-import logoWhite from "../../images/png/logoWhite.png";
 
 const Hero = props => {
   const { scrollToContent, backgrounds, theme } = props;
@@ -16,7 +14,18 @@ const Hero = props => {
           <h1>
             <span className="name">PHIL COLLINS</span>
             <br />
-            <span>Freelance Developer</span>
+            <Typing>
+              <span>Freelance Developer</span>
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace count={19} />
+              <span>Website Coach</span>
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace count={19} />
+              <span>Freelance Developer</span>
+              <Typing.Delay ms={1000} />
+              <Typing.Backspace count={19} />
+              <span>Website Coach</span>
+            </Typing>
           </h1>
           <br
             style={{
