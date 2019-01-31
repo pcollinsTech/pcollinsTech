@@ -40,7 +40,6 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve("./src/templates/PostTemplate.js");
-    const pageTemplate = path.resolve("./src/templates/PageTemplate.js");
     // const projectTemplate = path.resolve("./src/templates/ProjectTemplate.js");
     const categoryTemplate = path.resolve("./src/templates/CategoryTemplate.js");
     resolve(
@@ -142,21 +141,7 @@ exports.createPages = ({ graphql, actions }) => {
         //   });
         // });
 
-        // and pages.
-        const pages = items.filter(item => item.node.fields.source === "pages");
-        pages.forEach(({ node }) => {
-          const slug = node.fields.slug;
-          const source = node.fields.source;
-
-          createPage({
-            path: slug,
-            component: pageTemplate,
-            context: {
-              slug,
-              source
-            }
-          });
-        });
+        
       })
     );
   });

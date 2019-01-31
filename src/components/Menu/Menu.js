@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 require("core-js/fn/array/from");
 
-import { FaHome, FaEnvelope, FaFile, FaTag, FaUser, FaBriefcase } from "react-icons/fa/";
+import { FaHome, FaEnvelope, FaFile, FaTag, FaUser, FaBriefcase, FaHandshake } from "react-icons/fa/";
 
 import Item from "./Item";
 import Expand from "./Expand";
@@ -12,19 +12,13 @@ class Menu extends React.Component {
     super(props);
     this.itemList = React.createRef();
 
-    const pages = props.pages.map(page => ({
-      to: page.node.fields.slug,
-      label: page.node.frontmatter.menuTitle
-        ? page.node.frontmatter.menuTitle
-        : page.node.frontmatter.title
-    }));
 
     this.items = [
       { to: "/", label: "Home", icon: FaHome },
       { to: "/about/", label: "About", icon: FaUser },
       { to: "#blog", label: "Blog", icon: FaFile },
       { to: "#projects", label: "Projects", icon: FaBriefcase },
-      ...pages,
+      { to: "/charity", label: "Charity Work", icon: FaHandshake },
       { to: "#contact", label: "Contact", icon: FaEnvelope },
 
     ];
@@ -42,7 +36,6 @@ class Menu extends React.Component {
     fixed: PropTypes.bool.isRequired,
     screenWidth: PropTypes.number.isRequired,
     fontLoaded: PropTypes.bool.isRequired,
-    pages: PropTypes.array.isRequired,
     theme: PropTypes.object.isRequired
   };
 

@@ -124,7 +124,7 @@ const Footer = props => {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-          margin: 0 auto;
+          margin: 30px auto 0 auto;
           padding-bottom: 35px;
           max-width: ${theme.text.maxWidth.homepage};
           .item {

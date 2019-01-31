@@ -2,6 +2,7 @@ import React from "react";
 import { ThemeContext } from "../layouts";
 import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
+import { FaHandshake } from "react-icons/fa";
 
 const CharityPage = () => {
 
@@ -13,7 +14,7 @@ const CharityPage = () => {
               <header>
                 <Headline title="Charity Work" theme={theme} />
               </header>
-              <section className="about">
+              <section className="charity">
                 <div className="container">
                   <p className="paragraph">
                     Hello! If you are new to this, then "Charity Tuesday" is an initiative of
@@ -73,6 +74,9 @@ const CharityPage = () => {
                 margin: 20px;
               }
               @from-width desktop {
+                .charity {
+                  margin-bottom: 60px;
+                }
                 .avatar {
                   max-height: 160px;
                   max-width: 160px;
