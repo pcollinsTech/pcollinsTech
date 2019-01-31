@@ -51,36 +51,37 @@ export default PostTemplate;
 
 //eslint-disable-next-line no-undef
 export const postQuery = graphql`
-  query PostBySlug($slug: String!) {
-    post: markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      html
-      fields {
-        slug
-        prefix
-      }
-      frontmatter {
-        title
-        category
-        cover {
-          childImageSharp {
-            resize(width: 300) {
-              src
-            }
-          }
-        }
-      }
-    }
-    authornote: markdownRemark(fileAbsolutePath: { regex: "/author/" }) {
-      id
-      html
-    }
-    site {
-      siteMetadata {
-        facebook {
-          appId
-        }
-      }
-    }
-  }
-`;
+         query PostBySlug($slug: String!) {
+           post: markdownRemark(fields: { slug: { eq: $slug } }) {
+             id
+             html
+             excerpt(pruneLength: 250)
+             fields {
+               slug
+               prefix
+             }
+             frontmatter {
+               title
+               category
+               cover {
+                 childImageSharp {
+                   resize(width: 300) {
+                     src
+                   }
+                 }
+               }
+             }
+           }
+           authornote: markdownRemark(fileAbsolutePath: { regex: "/author/" }) {
+             id
+             html
+           }
+           site {
+             siteMetadata {
+               facebook {
+                 appId
+               }
+             }
+           }
+         }
+       `;

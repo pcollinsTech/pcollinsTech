@@ -32,9 +32,13 @@ const Seo = props => {
       <meta property="og:description" content={description} />
       <meta property="og:image" content={homescreen} />
       <meta property="og:type" content="website" />
-      <meta property="fb:app_id" content={facebook.appId} />
+      {/* <meta property="fb:app_id" content={facebook.appId} /> */}
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary" />
+      <meta
+        name="twitter:site"
+        content={config.authorTwitterAccount ? config.authorTwitterAccount : ""}
+      />
       <meta
         name="twitter:creator"
         content={config.authorTwitterAccount ? config.authorTwitterAccount : ""}

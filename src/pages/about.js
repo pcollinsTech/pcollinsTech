@@ -24,7 +24,6 @@ const AboutPage = props => {
                   <img src={fire} className="avatar" />
                 </div>
                 <p className="aboutParagraph">
-                  I'm Phil Collins. Not the singer unfortunately, but the developer. I live and
                   work mostly in Bournemouth, whilst hopping to and from Belfast, Northern Ireland
                   (where I'm from). Before I started out building websites, chatbots and apps, I
                   was working as a chef in the french alps.
@@ -69,13 +68,13 @@ const AboutPage = props => {
                   my knowledge and see their progression.
                 </p>
                 <p className="aboutParagraph">
-                  Learning to code has enabled me to combine the 2 passions I have in life, Learning everyday and
-                  sharing my knowledge with others.  
+                  Learning to code has enabled me to combine the 2 passions I have in life,
+                  Learning everyday and sharing my knowledge with others.
                 </p>
                 <p className="aboutParagraph">
-                  If you are looking to get your business online or want to find out more on how you can
-                  add functionalit to an existing website yourself, get in touch! I'm be more than happy
-                  to help!
+                  If you are looking to get your business online or want to find out more on how
+                  you can add functionalit to an existing website yourself, get in touch! I'm be
+                  more than happy to help!
                 </p>
               </div>
             </section>

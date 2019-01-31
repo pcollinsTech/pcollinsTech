@@ -10,7 +10,7 @@ module.exports = {
 
   /* author */
   authorName: "Phil Collins",
-  authorTwitterAccount: "pcollins.tech",
+  authorTwitterAccount: "@pcollinsTech",
 
   /* info */
   headerTitle: "Hi I'm Phil",
@@ -34,7 +34,8 @@ module.exports = {
   // social
   authorSocialLinks: [
     { name: "github", url: "https://github.com/pcollinsTech" },
-    { name: "twitter", url: "https://twitter.com/PhilCol07472427" },
-    { name: "facebook", url: "http://facebook.com/pcollins.tech" }
+    { name: "twitter", url: "https://twitter.com/pcollinsTech" },
+    { name: "facebook", url: "https://facebook.com/pcollins.tech" },
+    { name: "instagram", url: "https://www.instagram.com/pcollins.tech/" }
   ]
 };
