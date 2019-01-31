@@ -6,8 +6,8 @@ cover: photo-canapes.jpg
 ![pcollins.tech/photo-canapes.jpg](./photo-canapes.jpg)
 Being a Chef isn't for everyone. Long unsociable hours in a hot and sticky environment, with very little pay. It's really only for those who are extremely passionate about food.
 
-I fell into cheffing when I was 16/17. In my last year of school I was working in a restaurant as a waiter. From there I got hours as a kitchen porter, washing the dishes. I got rather efficient at it and started to ask the Head Chef for more jobs to do. That’s where my cooking career started out.  Through becoming a Chef, I’ve been able to work in some of the worlds most amazing places!
-My Grandparents farmers and I spent most of my summers with them, helping out wherever possible. My Mum was a trained Chef and my Nan is a great cook, so I was always spolit at home! This is where I learnt the basics of cooking.
+I fell into chefing when I was 16/17. In my last year of school I was working in a restaurant as a waiter. From there I got hours as a kitchen porter, washing the dishes. I got rather efficient at it and started to ask the Head Chef for more jobs to do. That’s where my cooking career started out.  Through becoming a Chef, I’ve been able to work in some of the worlds most amazing places!
+My Grandparents farmers and I spent most of my summers with them, helping out wherever possible. My Mum was a trained Chef and my Nan is a great cook, so I was always spolit at home! This is where I learnt the basics of cooking. 
 
 ![pcollins.tech/photo-porkquaver.jpg](./photo-porkquaver.jpg)
 I moved to France at the age of 20, where I lived for 6 years, working over the seasonal periods. In between the seasonal work, I would travel for a few weeks until the next season began or I would go back to Belfast to work as a relief Chef, working in a variety of kitchens. I never seemed to last very very long in an industrial kitchen. I would get bored of cooking the same dish over and over again and have to find another job elsewhere. 
