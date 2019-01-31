@@ -35,7 +35,7 @@ const Footer = props => {
               <div className="socialIcons">
                 <a
                   href="https://www.facebook.com/pcollins.tech/"
-                  taarget="__blank"
+                  target="__blank"
                   className="social"
                 >
                   <span className="iconSocial">
@@ -44,7 +44,7 @@ const Footer = props => {
                 </a>
                 <a
                   href="https://www.instagram.com/pcollins.tech/"
-                  taarget="__blank"
+                  target="__blank"
                   className="social"
                 >
                   <span className="iconSocial">
@@ -53,7 +53,7 @@ const Footer = props => {
                 </a>
                 <a
                   href="https://www.twitter.com/pcollins.tech/"
-                  taarget="__blank"
+                  target="__blank"
                   className="social"
                 >
                   <span className="iconSocial">
@@ -62,7 +62,7 @@ const Footer = props => {
                 </a>
                 <a
                   href="https://www.github.com/pcollinsTech/"
-                  taarget="__blank"
+                  target="__blank"
                   className="social"
                 >
                   <span className="iconSocial">
