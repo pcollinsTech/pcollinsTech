@@ -37,7 +37,7 @@ A chef uses multiple recipes in and a dish:
 	* Pan fried scallops
 	* Roasted lemon puree
 
-**Basic Concepts:** Cooking and coding have some basic concepts that are important to understand.  Some basic skills for cooking would be knowing your knives and cuts, making a reux, knowing the different cooking techniques (roasting, frying, blanching…). Some basic coding skills would be knowing how to set up an HTML page, navigating through your editor and the console, how to troubleshoot, and more.
+**Basic Concepts:** Cooking and coding have some basic concepts that are important to understand.  Some basic skills for cooking would be knowing your knives and cuts, making a roux, knowing the different cooking techniques (roasting, frying, blanching…). Some basic coding skills would be knowing how to set up an HTML page, navigating through your editor and the console, how to troubleshoot, and more.
 
 **Job Roles:** There are several different routes you can take in cooking and in coding.  To start in either industry, you need to pick one and grow from there. In cooking, you can be a baker, a grill chef, a pizza maker, a chocolatier etc. For coding, it’s more about the different languages: JavaScript, Python, Ruby, C#, and etc. and weither you want to focus on front-end or back-end development.
  
