@@ -152,7 +152,7 @@ const Item = props => {
             }
           }
 
-          h1 {
+          h2 {
             font-size: ${`calc(${theme.blog.h1.size} * 1.2)`};
             padding: ${`calc(${theme.space.default} * 1.5) ${theme.space.default} 0`};
             transition: all 0.5s;
@@ -173,7 +173,7 @@ const Item = props => {
           :global(.blogItemLink:first-child) > li::before {
             top: ${`calc(${theme.space.default} * -2.75)`};
           }
-          h1 {
+          h2 {
             font-size: 1.5em;
           }
           
@@ -188,7 +188,7 @@ const Item = props => {
               :global(.gatsby-image-wrapper) {
                 transform: scale(1.1);
               }
-              h1 {
+              h2 {
                 color: ${theme.blog.h1.hoverColor};
               }
               :global(.arrow) {

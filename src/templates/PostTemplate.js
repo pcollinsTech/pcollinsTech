@@ -30,7 +30,7 @@ const PostTemplate = props => {
               next={next}
               prev={prev}
               authornote={authorNote}
-              facebook={facebook}
+              // facebook={facebook}
               theme={theme}
             />
           </Article>
