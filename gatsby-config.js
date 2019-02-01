@@ -21,6 +21,7 @@ const query = `{
 }`;
 
 
+
 module.exports = {
   // pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -46,7 +47,7 @@ module.exports = {
       options: {
         component: require.resolve(`./src/layouts/`)
       }
-    }, 
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -73,6 +74,12 @@ module.exports = {
       options: {
         name: `parts`,
         path: `${__dirname}/content/parts/`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "1998159823636483"
       }
     },
     {
@@ -132,7 +139,6 @@ module.exports = {
         background_color: config.manifestBackgroundColor,
         theme_color: config.manifestThemeColor,
         display: config.manifestDisplay
-        
       }
     },
     {
