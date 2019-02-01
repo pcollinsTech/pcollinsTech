@@ -3,10 +3,10 @@ import React from "react";
 import { graphql } from "gatsby";
 require("prismjs/themes/prism-okaidia.css");
 
-import Seo from "../components/Seo";
-import Article from "../components/Article";
+import Seo from "../src/components/Seo";
+import Article from "../src/components/Article";
 import Project from "../components/Project";
-import { ThemeContext } from "../layouts";
+import { ThemeContext } from "../src/layouts";
 
 const ProjectTemplate = props => {
   const {

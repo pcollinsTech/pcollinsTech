@@ -1,14 +1,11 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
-import { ThemeContext } from "../../src/layouts";
-import Blog from "../../src/components/Blog";
-import Hero from "../../src/components/Hero";
-import Seo from "../../src/components/Seo";
-import Services from "../../src/components/Services";
+import { ThemeContext } from "../src/layouts";
+import Portfolio from "../src/components/Portfolio";
+import Seo from "../src/components/Seo";
 
 
-class BlogPage extends React.Component {
+class ProjectPage extends React.Component {
   separator = React.createRef();
 
   scrollToContent = e => {
@@ -18,8 +15,7 @@ class BlogPage extends React.Component {
   render() {
     const {
       data: {
-        posts: { edges: posts = [] },
-        
+        projects: { edges: projects = [] },
         
       }
     } = this.props;
@@ -28,9 +24,10 @@ class BlogPage extends React.Component {
     return <React.Fragment>
         
         <div className="gap" />
-
+          <h2>Projects I've worked on.</h2>
+          <p>Here are just a tiny number of the many interesting projects I’ve worked on</p>
         <ThemeContext.Consumer>
-          {theme => <Blog posts={posts} theme={theme} />}
+        {theme => <Portfolio projects={projects} theme={theme} />}
         </ThemeContext.Consumer>
 
         <Seo />
@@ -42,6 +39,10 @@ class BlogPage extends React.Component {
           .gap {
             margin: 130px;
           }
+          h2, p {
+            text-align: center;
+            margin-bottom: 20px;
+          }
           hr {
             margin: 0;
             border: 0;
@@ -50,17 +51,17 @@ class BlogPage extends React.Component {
   }
 }
 
-BlogPage.propTypes = {
+ProjectPage.propTypes = {
 //   data: PropTypes.object.isRequired
 };
 
-export default BlogPage;
+export default ProjectPage;
 
 //eslint-disable-next-line no-undef
 export const query = graphql`
-  query BlogQuery {
-    posts: allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "//posts/[0-9]+.*--/" } }
+  query ProjectQuery {
+    projects: allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "//projects/[0-9]+.*--/" } }
       sort: { fields: [fields___prefix], order: DESC }
     ) {
       edges {
@@ -86,15 +87,16 @@ export const query = graphql`
         }
       }
     }
-    site {
-      siteMetadata {
-        facebook {
-          appId
-        }
-      }
-    }
+    
     
   }
 `;
 
 //hero-background
+    // site {
+    //   siteMetadata {
+    //     facebook {
+    //       appId
+    //     }
+    //   }
+    // }
