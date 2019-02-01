@@ -3,6 +3,8 @@ import { ThemeContext } from "../layouts";
 import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
 import { FaHandshake } from "react-icons/fa";
+import Seo from "../components/Seo";
+
 
 const CharityPage = () => {
 

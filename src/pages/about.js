@@ -5,6 +5,7 @@ import Headline from "../components/Article/Headline";
 import avatar from "../images/jpg/avatar.jpg"
 import flip from "../images/jpg/flip.jpg"
 import fire from "../images/jpg/fire.jpg"
+import Seo from "../components/Seo"
 
 const AboutPage = props => {
   

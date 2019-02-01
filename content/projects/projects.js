@@ -1,10 +1,8 @@
-import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
 import { ThemeContext } from "../../src/layouts";
 import Portfolio from "../../src/components/Portfolio";
 import Seo from "../../src/components/Seo";
-import Services from "../../src/components/Services";
 
 
 class ProjectPage extends React.Component {
