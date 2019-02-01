@@ -46,11 +46,11 @@ const CharityPage = () => {
                     If you’d like to make use of my skills on a Tuesday, then please contact me
                     as soon as possible and I’ll check my diary for the next available Tuesday.
                   </p>
-                 
                 </div>
               </section>
             </Article>
           )}
+          <Seo  />
         </ThemeContext.Consumer>
         <ThemeContext.Consumer>
           {theme => (

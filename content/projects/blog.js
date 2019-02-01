@@ -20,9 +20,7 @@ class BlogPage extends React.Component {
       data: {
         posts: { edges: posts = [] },
         
-        site: {
-          siteMetadata: { facebook }
-        }
+        
       }
     } = this.props;
 
@@ -35,7 +33,7 @@ class BlogPage extends React.Component {
           {theme => <Blog posts={posts} theme={theme} />}
         </ThemeContext.Consumer>
 
-        <Seo facebook={facebook} />
+        <Seo />
 
         <style jsx>{`
           #container {

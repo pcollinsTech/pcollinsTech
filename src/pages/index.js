@@ -29,9 +29,7 @@ class IndexPage extends React.Component {
         bgMobile: {
           resize: { src: mobile }
         },
-        site: {
-          siteMetadata: { facebook }
-        }
+        
       }
     } = this.props;
 
@@ -66,7 +64,7 @@ class IndexPage extends React.Component {
           {theme => <Blog posts={posts} theme={theme} />}
         </ThemeContext.Consumer>
 
-        <Seo facebook={facebook} />
+        <Seo />
 
         <style jsx>{`
           #container {
@@ -116,13 +114,7 @@ export const query = graphql`
         }
       }
     }
-    site {
-      siteMetadata {
-        facebook {
-          appId
-        }
-      }
-    }
+   
     bgDesktop: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
       resize(width: 1200, quality: 90, cropFocus: CENTER) {
         src
@@ -142,3 +134,10 @@ export const query = graphql`
 `;
 
 //hero-background
+// site {
+//   siteMetadata {
+//     facebook {
+//       appId
+//     }
+//   }
+// }

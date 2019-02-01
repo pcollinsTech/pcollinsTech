@@ -19,9 +19,6 @@ class ProjectPage extends React.Component {
       data: {
         projects: { edges: projects = [] },
         
-        site: {
-          siteMetadata: { facebook }
-        }
       }
     } = this.props;
 
@@ -29,13 +26,13 @@ class ProjectPage extends React.Component {
     return <React.Fragment>
         
         <div className="gap" />
-          <h1>Projects I've worked on.</h1>
+          <h2>Projects I've worked on.</h2>
           <p>Here are just a tiny number of the many interesting projects I’ve worked on</p>
         <ThemeContext.Consumer>
         {theme => <Portfolio projects={projects} theme={theme} />}
         </ThemeContext.Consumer>
 
-        <Seo facebook={facebook} />
+        <Seo />
 
         <style jsx>{`
           #container {
@@ -44,7 +41,7 @@ class ProjectPage extends React.Component {
           .gap {
             margin: 130px;
           }
-          h1, p {
+          h2, p {
             text-align: center;
             margin-bottom: 20px;
           }
@@ -92,15 +89,16 @@ export const query = graphql`
         }
       }
     }
-    site {
-      siteMetadata {
-        facebook {
-          appId
-        }
-      }
-    }
+    
     
   }
 `;
 
 //hero-background
+    // site {
+    //   siteMetadata {
+    //     facebook {
+    //       appId
+    //     }
+    //   }
+    // }

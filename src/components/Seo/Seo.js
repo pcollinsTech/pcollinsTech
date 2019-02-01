@@ -5,7 +5,7 @@ import config from "../../../content/meta/config";
 import homescreen from "../../images/projects/homescreen.png"
 
 const Seo = props => {
-  const { data, facebook } = props;
+  const { data } = props;
   const postTitle = ((data || {}).frontmatter || {}).title;
   const postDescription = ((data || {}).frontmatter || {}).description;
   const postCover = ((data || {}).frontmatter || {}).cover;
@@ -25,6 +25,10 @@ const Seo = props => {
     >
       {/* General tags */}
       <title>{title}</title>
+      <meta
+        name="google-site-verification"
+        content="xmq2Wuv9RD4ejSH6B6UuAiOfVGR1vf0oCkRh_iMw8so"
+      />
       <meta name="description" content={description} />
       {/* OpenGraph tags */}
       <meta property="og:url" content={url} />

@@ -80,6 +80,7 @@ const AboutPage = props => {
             </section>
           </Article>
         )}
+        <Seo  />
       </ThemeContext.Consumer>
       <ThemeContext.Consumer>
         {theme => (

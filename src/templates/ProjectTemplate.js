@@ -29,14 +29,14 @@ const ProjectTemplate = props => {
               project={project}
               // next={next}
               // prev={prev}
-              facebook={facebook}
+              // facebook={facebook}
               theme={theme}
             />
           </Article>
         )}
       </ThemeContext.Consumer>
 
-      <Seo data={project} facebook={facebook} />
+      <Seo data={project}  />
     </React.Fragment>
   );
 };
