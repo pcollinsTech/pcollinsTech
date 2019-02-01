@@ -47,8 +47,8 @@ class Header extends React.Component {
               </ScreenWidthContext.Consumer>
             </div>
             <div className="type">
-              <h1>{config.headerTitle}</h1>
-              <h2>{config.headerSubTitle}</h2>
+              <h2>{config.headerTitle}</h2>
+              <h3>{config.headerSubTitle}</h3>
             </div>
           </Link>
           <FontLoadedContext.Consumer>
@@ -105,13 +105,13 @@ class Header extends React.Component {
             }
           }
 
-          h1 {
+          h2 {
             font-size: ${theme.font.size.m};
             font-weight: ${theme.font.weight.standard};
             margin: ${theme.space.stack.xs};
           }
 
-          h2 {
+          h3 {
             font-weight: ${theme.font.weight.standard};
             font-size: ${theme.font.size.xs};
             letter-spacing: 0;
@@ -162,10 +162,10 @@ class Header extends React.Component {
               }
 
               :global(a.logoType),
-              h1 {
+              h2 {
                 color: ${theme.color.neutral.white};
               }
-              h2 {
+              h3 {
                 color: ${theme.color.brand.primary};
               }
             }}
@@ -190,21 +190,21 @@ class Header extends React.Component {
                 width: 100%;
                 z-index: 1;
 
-                h1 {
+                h2 {
                   margin: ${theme.space.stack.xxs};
                 }
 
-                h2 {
+                h3 {
                   display: none;
                 }
               }
 
               &.homepage:not(.fixed) {
                 :global(a.logoType),
-                h1 {
+                h2 {
                   color: ${theme.color.neutral.white};
                 }
-                h2 {
+                h3 {
                   color: ${theme.color.brand.primary};
                 }
               }
@@ -232,12 +232,12 @@ class Header extends React.Component {
               }
             }
 
-            h2 {
+            h3 {
               animation-duration: ${theme.time.duration.default};
               animation-name: h2Entry;
             }
 
-            @keyframes h2Entry {from {
+            @keyframes h3Entry {from {
                 opacity: 0;
               }
               to {

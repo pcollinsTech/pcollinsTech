@@ -54,8 +54,8 @@ const Project = ({theme}) => {
             <h2>Projects I've worked on</h2>
             <div className="container">
                     {
-                        items.map(item=>{
-                            return <Item project={item} theme={theme}/>
+                        items.map((item,index)=>{
+                            return <Item project={item} theme={theme} key={index}/>
                         })
                     }
             </div>

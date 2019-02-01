@@ -30,9 +30,9 @@ const Item = props => {
           <div className="gatsby-image-outer-wrapper">
             <Img fluid={fluid} />
           </div>
-          <h1>
+          <h2>
             {title} <FaArrowRight className="arrow" />
-          </h1>
+          </h2>
           <p className="meta">
             <span>
               <FaCalendar size={18} /> {prefix}
@@ -62,7 +62,7 @@ const Item = props => {
           transition: all ${theme.time.duration.default};
           background: transparent;
           width:360px;
-          h1{
+          h2{
             margin-top: 15px;
           }
           :global(.gatsby-image-outer-wrapper) {
@@ -98,7 +98,7 @@ const Item = props => {
           }
         }
 
-        h1 {
+        h2 {
           // padding: ${theme.space.m} ${theme.space.s} 0;
           line-height: ${theme.blog.h1.lineHeight};
           font-size: ${theme.blog.h1.size};
