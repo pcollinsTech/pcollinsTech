@@ -52,8 +52,8 @@ const CharityPage = () => {
               </section>
             </Article>
           )}
-          <Seo  />
         </ThemeContext.Consumer>
+        <Seo  />
         <ThemeContext.Consumer>
           {theme => (
             <style jsx="true">{`

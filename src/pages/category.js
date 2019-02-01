@@ -68,8 +68,8 @@ const CategoryPage = props => {
           </Article>
         )}
       </ThemeContext.Consumer>
-
       <Seo  />
+
     </React.Fragment>
   );
 };
