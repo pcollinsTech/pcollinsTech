@@ -7,7 +7,7 @@ const Item = ({theme, project}) => {
     <React.Fragment>
       <div className="item">
         <OutboundLink href={project.url} target="__blank">
-          <img src={project.image} alt={`${project.name}screenshot`} />
+          <img src={project.image} alt={`${project.name} screenshot`} />
         </OutboundLink>
       </div>
       {/* --- STYLES --- */}
@@ -67,3 +67,4 @@ const Item = ({theme, project}) => {
 }
 
 export default Item;
+

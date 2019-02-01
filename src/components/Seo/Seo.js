@@ -39,6 +39,7 @@ const Seo = props => {
       {/* <meta property="fb:app_id" content={facebook.appId} /> */}
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary" />
+      
       <meta
         name="twitter:site"
         content={config.authorTwitterAccount ? config.authorTwitterAccount : ""}
@@ -53,7 +54,6 @@ const Seo = props => {
 
 Seo.propTypes = {
   data: PropTypes.object,
-  facebook: PropTypes.object.isRequired
 };
 
 export default Seo;

@@ -26,7 +26,7 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={hosting} />
+              <img src={hosting} alt="hosting"/>
               <h2>Hosting</h2>
               <p>
                 Does your new website or webs application need a home? I can offer Domain name and hosting services
@@ -34,7 +34,7 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={marketing} />
+              <img src={marketing} alt="marketing" />
               <h2>Training</h2>
               <p>
                 I offer one-to-one or group training, either in person or over Skype to help you
@@ -42,7 +42,7 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={optimised} />
+              <img src={optimised} alt="optimised" />
               <h2>Optimised</h2>
               <p>
                 The performance of your website plays a key role in whether your users decide to
@@ -51,7 +51,7 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={responsive} />
+              <img src={responsive} alt="responsive"/>
               <h2>Responsive Design</h2>
               <p>
                 All of my recent websites are responsive. This means that the layout changes and
@@ -60,7 +60,7 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={seo} />
+              <img src={seo} alt="seo"/>
               <h2>Seo</h2>
               <p>
                 My websites are designed to be search-engine friendly. They often

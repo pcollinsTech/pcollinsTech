@@ -29,9 +29,35 @@ class IndexPage extends React.Component {
         bgMobile: {
           resize: { src: mobile }
         },
-        
+        stJamesStudio: {
+          resize: { src: stJamesStudio }
+        },
+        waxHiveWraps: {
+          resize: { src: waxHiveWraps }
+        },
+        balincourt: {
+          resize: { src: balincourt }
+        },
+        eiProjects: {
+          resize: { src: eiProjects }
+        },
+        digitalWorksAgency: {
+          resize: { src: digitalWorksAgency }
+        },
+        tooGoodToBe: {
+          resize: { src: tooGoodToBe }
+        },
       }
     } = this.props;
+
+    const projectImages = {
+      stJamesStudio,
+      waxHiveWraps,
+      balincourt,
+      digitalWorksAgency,
+      eiProjects,
+      tooGoodToBe
+    };
 
     const backgrounds = {
       desktop,
@@ -57,7 +83,7 @@ class IndexPage extends React.Component {
         </ThemeContext.Consumer>
 
         <ThemeContext.Consumer>
-          {theme => <Project theme={theme}/>}
+        {theme => <Project theme={theme} projectImages={projectImages}/>}
         </ThemeContext.Consumer>
         
         <ThemeContext.Consumer>
@@ -127,6 +153,36 @@ export const query = graphql`
     }
     bgMobile: imageSharp(fluid: { originalName: { regex: "/hero-background/" } }) {
       resize(width: 450, height: 850, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    waxHiveWraps: imageSharp(fluid: { originalName: { regex: "/wax-hive-wraps/" } }) {
+      resize(width: 650, height: 400, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    digitalWorksAgency: imageSharp(fluid: { originalName: { regex: "/digital-works-agency/" } }) {
+      resize(width: 650, height: 400, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    balincourt: imageSharp(fluid: { originalName: { regex: "/balincourt/" } }) {
+      resize(width: 650, height: 400, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    eiProjects: imageSharp(fluid: { originalName: { regex: "/ei-projects/" } }) {
+      resize(width: 650, height: 400, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    tooGoodToBe: imageSharp(fluid: { originalName: { regex: "/too-good-to-be/" } }) {
+      resize(width: 650, height: 400, quality: 90, cropFocus: CENTER) {
+        src
+      }
+    }
+    stJamesStudio: imageSharp(fluid: { originalName: { regex: "/st-james-studio/" } }) {
+      resize(width: 650, height: 400, quality: 90, cropFocus: CENTER) {
         src
       }
     }
