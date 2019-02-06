@@ -11,10 +11,10 @@ url: https://digitalworksagency.com
 
 ##The Brief
 
-Digital Works Agency wanted to bring their website over from Squarespace. It needed a clean, modern but professional
-to show off their skillset, 
+Digital Works Agency wanted to bring their website over from Squarespace. It needed a fresh look, modern but professional, 
+giving them the ability to showcase the work they do.
 
 
 ##The Result
 
-The
+Digital Works Agency continue to 
