@@ -6,17 +6,17 @@ screen: laptop.jpg
 brief: Interior Fit-out Specialists
 url: https://eiprojects.co.uk
 ---
-Emporia Creative approached me to build their client's website.
+###*" Managing Your Project From Concept To Completion. "*
 
 
 ##The Brief
 
-Emporia Creative approached me to build a website for their client. They where going through a rebrand 
-of the company and needed a brand new website to bring them up to date. They needed a place to display 
-their work and show their 
+Emporia Creative approached me to build a website for their client. EI Projects where going through a rebrand 
+and needed a new website to bring them up to date. They needed a place to showcase their work and explain the
+services they provide.
 
 
 ##The Result
 
-Using a very simple, yet elegant UI (user interface), coupled with bespoke product photography that 
-really jumps out of the page, this site is beautiful and useable.
+Using a simple UI, multiple custom post types and high quality imagery, the website has been brought into the future
+and displays the work they've done to any future potential client

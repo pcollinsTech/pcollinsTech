@@ -11,7 +11,7 @@ url: https://digitalworksagency.com
 
 ##The Brief
 
-Digital Works Agency wanted to bring their website over from Squarespace. It needed to look slick and proffesional
+Digital Works Agency wanted to bring their website over from Squarespace. It needed a clean, modern but professional
 to show off their skillset, 
 
 

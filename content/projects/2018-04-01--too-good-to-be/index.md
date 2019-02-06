@@ -19,5 +19,5 @@ be improved to prevent the number of baskets left unfulfilled due to people gett
 ##The Result
 
 Too Good To Be are extremely happy with their new website. They've seen an increase in sales and a decrease in the number 
-of baskets being left unfulfilled.  
+of baskets being left unfulfilled.  The website boasts bright colors through giving the brand a new lease of life.
 

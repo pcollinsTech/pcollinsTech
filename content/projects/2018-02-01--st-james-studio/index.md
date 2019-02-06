@@ -17,4 +17,5 @@ site needed to have a blog section and a place to display the work they do for t
 
 ##The Result
 
-Using a very simple, yet elegant UI (user interface), coupled with bespoke product photography that really jumps out of the page, this site is beautiful and useable.
+Using a very simple, yet elegant UI, coupled with bespoke product photography that really jumps out 
+of the page. The site is easy to use and shows off St James Studio's with a modern twist.
