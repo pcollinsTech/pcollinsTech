@@ -82,7 +82,7 @@ class Header extends React.Component {
             top: 0;
             width: 100%;
             align-items: center;
-            z-index: 30;
+            
 
             :global(a.logoType) {
               align-items: center;
@@ -99,6 +99,7 @@ class Header extends React.Component {
               position: absolute;
               background-color: transparent;
               height: ${theme.header.height.homepage};
+              
               .type {
                 display: none;
               }
@@ -184,7 +185,7 @@ class Header extends React.Component {
               width: 100%;
               justify-content: space-between;
               transition: padding 0.5s;
-              z-index: 30;
+              
 
               &.fixed {
                 height: ${theme.header.height.fixed};
@@ -195,6 +196,7 @@ class Header extends React.Component {
                 top: 0;
                 width: 100%;
                 z-index: 1;
+                z-index: 30;
 
                 h2 {
                   margin: ${theme.space.stack.xxs};

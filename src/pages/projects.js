@@ -38,7 +38,7 @@ class ProjectPage extends React.Component {
             margin: 0 auto;
           }
           .gap {
-            margin: 130px;
+            margin: 80px;
           }
           h2, p {
             text-align: center;

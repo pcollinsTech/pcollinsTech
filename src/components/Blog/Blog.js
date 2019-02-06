@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import React from "react";
+import Headline from "../Article/Headline";
 
 import Item from "./Item";
 
@@ -9,7 +10,7 @@ const Blog = props => {
   return (
     <React.Fragment>
       <main className="main" id="blog">
-        <h2>Blog</h2>
+        <Headline title="Blog" theme={theme} />
         <div>
           {posts.map(post => {
             const {

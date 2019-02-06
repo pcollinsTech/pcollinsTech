@@ -1,4 +1,5 @@
 import React from 'react'
+import Headline from "../Article/Headline";
 
 
 import Item from './Item'
@@ -9,10 +10,11 @@ const Project = props => {
   return (
     <React.Fragment>
       <div id="projects" className={background}>
-        <h2>Some projects I've worked on in the past</h2>
+        <Headline title="Portfolio" theme={theme} />
+        <h3>Some projects I've worked on in the past</h3>
         <div className="container">
           {projects.map((project, index) => {
-            return <Item project={project.node} theme={theme} key={index} location={location}/>;
+            return <Item project={project.node} theme={theme} key={index} location={location} />;
           })}
         </div>
       </div>
@@ -28,11 +30,11 @@ const Project = props => {
         }
         .blue {
           background-color: ${theme.color.brand.primary};
-          color:white;
+          color: white;
         }
-        h2 {
+        h3 {
           text-align: center;
-          font-size: 30px;
+          font-size: 24px;
           margin-bottom: 3em;
         }
         .container {

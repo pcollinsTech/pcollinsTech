@@ -38,7 +38,7 @@ class BlogPage extends React.Component {
             margin: 0 auto;
           }
           .gap {
-            margin: 130px;
+            margin: 80px;
           }
           hr {
             margin: 0;
