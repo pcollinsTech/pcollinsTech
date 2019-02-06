@@ -5,8 +5,7 @@ import Bodytext from "./Bodytext";
 import Headline from "./Headline";
 import Meta from "./Meta";
 import WorkTogetherFooter from "./WorkTogetherFooter"
-import laptop from "../../images/png/theme-laptop-full.png";
-
+import { Link } from 'gatsby'
 
 const Main = props => {  
   console.log("Main.js",props)
@@ -32,6 +31,7 @@ const Main = props => {
         <div className="container">
           <div className="frame">
             <Img fluid={fluid} />
+            <a href={url} target="__blank">{title}</a>
           </div>
           <div className="text">
             <Bodytext html={html} theme={theme} />
@@ -50,8 +50,12 @@ const Main = props => {
           justify-content: space-around;
           flex-wrap: wrap;
         }
+        a{
+          color: ${theme.color.brand.secondary};
+        }
         .frame {
           flex: 2;
+          text-align: center;
         }
 
         .footer {
