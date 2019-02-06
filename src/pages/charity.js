@@ -71,7 +71,7 @@ const CharityPage = () => {
                 border: 2px solid ${theme.color.brand.primary};
                 border-radius: 50%;
               }
-              .paragraph {
+              .paragraph, h3 {
                 margin: 20px;
               }
               @from-width desktop {
