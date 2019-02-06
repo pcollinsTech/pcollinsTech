@@ -26,7 +26,7 @@ const Blog = props => {
       {/* --- STYLES --- */}
       <style jsx>{`
         .main {
-          padding: 50px;
+          padding: 70px 0 ;
         }
         h2 {
           font-size: 30px;
@@ -45,7 +45,7 @@ const Blog = props => {
 
         @above tablet {
           .main {
-            padding: 50px;
+            padding: 70px;
           }
           div {
             max-width: ${theme.text.maxWidth.tablet};
@@ -53,7 +53,7 @@ const Blog = props => {
         }
         @above desktop {
           .main {
-            padding: 50px;
+            padding: 70px;
           }
           div {
             max-width: ${theme.text.maxWidth.homepage};

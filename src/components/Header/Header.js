@@ -35,16 +35,15 @@ class Header extends React.Component {
     const { path, theme } = this.props;
     const { fixed } = this.state;
 
-    return <React.Fragment>
+    return (
+      <React.Fragment>
         <header className={`header ${this.getHeaderSize()}`}>
           <Link to="/" className="logoType">
             <div className="logo">
-            <ScreenWidthContext.Consumer>
-                {width => (
-                  
-                  <img src={ width > "1024" ? logo : (path === "/")? logoWhite : logo} alt={config.siteTitle} />
-                )}
-              </ScreenWidthContext.Consumer>
+              <img
+                src={path === "/" && fixed != true ? logoWhite : logo}
+                alt={config.siteTitle}
+              />
             </div>
             <div className="type">
               <h2>{config.headerTitle}</h2>
@@ -83,6 +82,7 @@ class Header extends React.Component {
             top: 0;
             width: 100%;
             align-items: center;
+            z-index: 30;
 
             :global(a.logoType) {
               align-items: center;
@@ -148,15 +148,18 @@ class Header extends React.Component {
             top: ${path === "/" ? theme.header.height.homepage : theme.header.height.default};
           }
 
-          @from-width tablet {.header {
+          @from-width tablet {
+            .header {
               padding: ${theme.space.inset.l};
 
               &.homepage {
                 height: ${theme.header.height.homepage};
               }
-            }}
+            }
+          }
 
-          @below desktop {.header.homepage {
+          @below desktop {
+            .header.homepage {
               .logo {
                 border: none;
               }
@@ -168,9 +171,11 @@ class Header extends React.Component {
               h3 {
                 color: ${theme.color.brand.primary};
               }
-            }}
+            }
+          }
 
-          @from-width desktop {.header {
+          @from-width desktop {
+            .header {
               align-items: center;
               background-color: ${theme.color.brand.white};
               display: flex;
@@ -179,6 +184,7 @@ class Header extends React.Component {
               width: 100%;
               justify-content: space-between;
               transition: padding 0.5s;
+              z-index: 30;
 
               &.fixed {
                 height: ${theme.header.height.fixed};
@@ -237,13 +243,18 @@ class Header extends React.Component {
               animation-name: h2Entry;
             }
 
-            @keyframes h3Entry {from {
+            @keyframes h3Entry {
+              from {
                 opacity: 0;
               }
               to {
                 opacity: 1;
-              }}}`}</style>
-      </React.Fragment>;
+              }
+            }
+          }
+        `}</style>
+      </React.Fragment>
+    );
   }
 }
 

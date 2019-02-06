@@ -36,19 +36,18 @@ const Contact = props => {
 
       {/* --- STYLES --- */}
       <style jsx>{`
-        
         .main {
           background: ${theme.color.brand.primary};
-          padding: ${theme.space.inset.default};
+          padding: 70px 50px;
           color: ${theme.color.neutral.gray.g};
         }
-        
+
         .contactForm {
           padding-top: 22px;
           button {
             margin: 10px 5px 10px 0;
             padding: 8px 13px;
-            border-radius: 5px;
+            border-radius: ${theme.size.radius.default};
             border: none;
             font-size: 20px;
             float: right;
@@ -64,7 +63,7 @@ const Contact = props => {
             margin: 10px 5px 10px 0;
             padding: 8px 5px;
             border: none;
-            border-radius: 5px;
+            border-radius: ${theme.size.radius.default};
           }
         }
         h2 {
@@ -78,11 +77,7 @@ const Contact = props => {
           margin: 0 auto;
           padding-bottom: 65px;
           max-width: ${theme.text.maxWidth.homepage};
-          
         }
-        
-
-       
       `}</style>
     </React.Fragment>
   );

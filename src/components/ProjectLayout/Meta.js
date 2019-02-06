@@ -2,8 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
-import { FaCalendar } from "react-icons/fa/";
-import { FaUser } from "react-icons/fa/";
 import { FaTag } from "react-icons/fa/";
 
 const Meta = props => {
@@ -11,10 +9,6 @@ const Meta = props => {
 
   return (
     <p className="meta">
-      <span>
-        <FaCalendar size={18} /> {prefix}
-      </span>
-     
       {category && (
         <span>
           <FaTag size={18} />
@@ -27,6 +21,7 @@ const Meta = props => {
         .meta {
           display: flex;
           flex-flow: row wrap;
+          text-align: center;
           font-size: 0.8em;
           margin: ${theme.space.m} 0;
           background: transparent;
@@ -39,11 +34,12 @@ const Meta = props => {
             align-items: center;
             display: flex;
             text-transform: uppercase;
-            margin: ${theme.space.xs} ${theme.space.s} ${theme.space.xs} 0;
+            margin: 0 auto;
           }
         }
         @from-width tablet {
           .meta {
+            text-align: center;
             margin: ${`calc(${theme.space.m} * 1.5) 0 ${theme.space.m}`};
           }
         }

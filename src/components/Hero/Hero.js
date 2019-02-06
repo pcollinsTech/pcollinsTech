@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Typing from 'react-typing-animation'
 import { FaArrowDown } from "react-icons/fa/";
 
 
@@ -14,19 +13,7 @@ const Hero = props => {
           <h1>
             <span className="name">PHIL COLLINS</span>
             <br />
-            <Typing>
-             
-              <span>Freelance Developer</span>
-              <Typing.Delay ms={2000} />
-              <Typing.Backspace count={19} />
-              <span>Website Development Training</span>
-              <Typing.Delay ms={2000} />
-              <Typing.Backspace count={28} />
-              <span>Freelance Developer</span>
-              <Typing.Delay ms={2000} />
-              <Typing.Backspace count={19} />
-              <span>Website Development Training</span>
-            </Typing>
+            Software Developer
           </h1>
           <br
             style={{
@@ -87,7 +74,6 @@ const Hero = props => {
               content: "›";
               color: ${theme.text.color.attention};
               margin: 0 ${theme.space.xs} 0 0;
-              text-shadow: 0 0 ${theme.space.s} ${theme.color.neutral.gray.k};
             }
             &::after {
               content: "‹";
@@ -97,13 +83,12 @@ const Hero = props => {
         }
         h2 {
           text-align: center;
-          color: #d6cfcb;
+          color: #fff;
           padding: 0 0 30px 0;
           font-size: 1.5em;
           line-height: ${theme.hero.h1.lineHeight};
           transform-origin: 50% 50% 0;
           transform: translate3d(0, 0, 0);
-          text-shadow: 2px 2px #000;
           span {
             font-size: 30px;
           }

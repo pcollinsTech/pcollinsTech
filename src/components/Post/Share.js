@@ -5,9 +5,6 @@ import {
   GooglePlusShareButton,
   LinkedinShareButton,
   TwitterShareButton,
-  FacebookShareCount,
-  GooglePlusShareCount,
-  LinkedinShareCount,
   FacebookIcon,
   TwitterIcon,
   GooglePlusIcon,
@@ -52,9 +49,6 @@ const PostShare = props => {
             }}
           >
             <GooglePlusIcon round size={iconSize} />
-            <GooglePlusShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </GooglePlusShareCount>
           </GooglePlusShareButton>
           <FacebookShareButton
             url={url}
@@ -64,9 +58,6 @@ const PostShare = props => {
             }}
           >
             <FacebookIcon round size={iconSize} />
-            <FacebookShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </FacebookShareCount>
           </FacebookShareButton>
           <LinkedinShareButton
             url={url}
@@ -77,9 +68,6 @@ const PostShare = props => {
             }}
           >
             <LinkedinIcon round size={iconSize} />
-            <LinkedinShareCount url={url}>
-              {count => <div className="share-count">{filter(count)}</div>}
-            </LinkedinShareCount>
           </LinkedinShareButton>
         </div>
       </div>

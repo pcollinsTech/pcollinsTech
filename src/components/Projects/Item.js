@@ -1,27 +1,60 @@
 import React from 'react'
-import { OutboundLink } from "gatsby-plugin-google-analytics";
+import { Link } from "gatsby";
+import Img from "gatsby-image";
 
 
-const Item = ({theme, project}) => {
+const Item = (props) => {
+  const {
+    location,
+    theme,
+    project: {
+      fields: { slug, prefix },
+      frontmatter: {
+        title,
+        brief,
+        category,
+        cover: {
+          children: [{ fluid }]
+        }
+      }
+    }
+  } = props;
+  const border= (location.pathname === "/projects") ? "border" : ""
   return (
     <React.Fragment>
       <div className="item">
-        <OutboundLink href={project.url} target="__blank">
-          <img src={project.image} alt={`${project.name} screenshot`} />
-        </OutboundLink>
+        <Link to={slug} key={slug} className="link">
+          <div className={`gatsby-image-outer-wrapper ${border}`}>
+            <Img fluid={fluid} />
+          </div>
+        </Link>
+      </div>
+      <div className="project">
+        <h2>{title}</h2>
+        <p>{brief}</p>
+        <span>{category}</span>
       </div>
       {/* --- STYLES --- */}
       <style jsx>{`
-        h2 {
-          font-size: 2rem;
-          color: ${theme.color.brand.secondary};
-          padding-bottom: 1rem;
+        .border {
+          border: 1px solid ${theme.line.color};
         }
-        img {
-          max-width: 100%;
+        :global(.link) {
+          width: 100%;
+          color: ${theme.text.color.primary};
+          z-index: 11;
+        }
+        :global(.gatsby-image-outer-wrapper) {
+          border-radius: ${theme.size.radius.default};
+          overflow: hidden;
+        }
+        :global(.gatsby-image-outer-wrapper img) {
+          z-index: 1;
         }
         .item {
-          margin-bottom: 14px;
+          position: relative;
+          width: 32%;
+          margin-bottom: 18px;
         }
         .project {
           position: absolute;

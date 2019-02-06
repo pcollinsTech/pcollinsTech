@@ -1,8 +1,8 @@
 import React from "react";
 import { graphql } from "gatsby";
-import { ThemeContext } from "../src/layouts";
-import Portfolio from "../src/components/Portfolio";
-import Seo from "../src/components/Seo";
+import { ThemeContext } from "../layouts";
+import Projects from "../components/Projects";
+import Seo from "../components/Seo";
 
 
 class ProjectPage extends React.Component {
@@ -14,23 +14,24 @@ class ProjectPage extends React.Component {
 
   render() {
     const {
+      location,
       data: {
         projects: { edges: projects = [] },
-        
       }
     } = this.props;
 
 
     return <React.Fragment>
+        <div className="blue">
         
-        <div className="gap" />
-          <h2>Projects I've worked on.</h2>
-          <p>Here are just a tiny number of the many interesting projects I’ve worked on</p>
-        <ThemeContext.Consumer>
-        {theme => <Portfolio projects={projects} theme={theme} />}
-        </ThemeContext.Consumer>
+          <div className="gap" />
+            
+          <ThemeContext.Consumer>
+          {theme => <Projects projects={projects} theme={theme} location={location}/>}
+          </ThemeContext.Consumer>
 
-        <Seo />
+          <Seo />
+        </div>
 
         <style jsx>{`
           #container {

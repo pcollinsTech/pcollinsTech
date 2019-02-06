@@ -2,18 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
-import { FaCalendar } from "react-icons/fa/";
 import { FaTag } from "react-icons/fa/";
 
 const Meta = props => {
-  const { prefix, author: authorName, category, theme } = props;
+  const { prefix, category, theme } = props;
 
   return (
     <p className="meta">
-      <span>
-        <FaCalendar size={18} /> {prefix}
-      </span>
-     
       {category && (
         <span>
           <FaTag size={18} />
@@ -25,7 +20,6 @@ const Meta = props => {
       <style jsx>{`
         .meta {
           display: flex;
-          text-align: center;
           flex-flow: row wrap;
           font-size: 0.8em;
           margin: ${theme.space.m} 0;

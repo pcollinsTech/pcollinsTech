@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const postTemplate = path.resolve("./src/templates/PostTemplate.js");
-    // const projectTemplate = path.resolve("./src/templates/ProjectTemplate.js");
+    const projectTemplate = path.resolve("./src/templates/ProjectTemplate.js");
     const categoryTemplate = path.resolve("./src/templates/CategoryTemplate.js");
     resolve(
       graphql(
@@ -122,24 +122,24 @@ exports.createPages = ({ graphql, actions }) => {
         });
         
         // Create projects
-        // const projects = items.filter(item => item.node.fields.source === "projects");
-        // projects.forEach(({ node }, index) => {
-        //   const slug = node.fields.slug;
-        //   const next = index === 0 ? undefined : projects[index - 1].node;
-        //   const prev = index === projects.length - 1 ? undefined : projects[index + 1].node;
-        //   const source = node.fields.source;
+        const projects = items.filter(item => item.node.fields.source === "projects");
+        projects.forEach(({ node }, index) => {
+          const slug = node.fields.slug;
+          const next = index === 0 ? undefined : projects[index - 1].node;
+          const prev = index === projects.length - 1 ? undefined : projects[index + 1].node;
+          const source = node.fields.source;
 
-        //   createPage({
-        //     path: slug,
-        //     component: projectTemplate,
-        //     context: {
-        //       slug,
-        //       prev,
-        //       next,
-        //       source
-        //     }
-        //   });
-        // });
+          createPage({
+            path: slug,
+            component: projectTemplate,
+            context: {
+              slug,
+              prev,
+              next,
+              source
+            }
+          });
+        });
 
         
       })

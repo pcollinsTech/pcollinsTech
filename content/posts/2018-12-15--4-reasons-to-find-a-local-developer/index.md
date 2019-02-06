@@ -1,6 +1,6 @@
 ---
 title: 4 Reasons To Find A Local Developer
-category: "sayings"
+category: "Tips"
 cover: photo-1456518563096-0ff5ee08204e.jpg
 ---
 In the last few decades an increasing amount people are doing their own thing and working for themselves.

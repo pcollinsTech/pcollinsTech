@@ -3,40 +3,28 @@ import React from "react";
 import { graphql } from "gatsby";
 require("prismjs/themes/prism-okaidia.css");
 
-import Seo from "../src/components/Seo";
-import Article from "../src/components/Article";
-import Project from "../components/Project";
-import { ThemeContext } from "../src/layouts";
+import Seo from "../components/Seo";
+import ProjectLayout from "../components/ProjectLayout";
+import { ThemeContext } from "../layouts";
 
 const ProjectTemplate = props => {
   const {
     data: {
       project,
-      site: {
-        siteMetadata: { facebook }
-      }
+      // site: {
+      //   siteMetadata: { facebook }
+      // }
     },
     // projectContext: { next, prev }
   } = props;
 
-  
+  console.log("projecttemplate", project)
   return (
     <React.Fragment>
       <ThemeContext.Consumer>
-        {theme => (
-          <Article theme={theme}>
-            <Project
-              project={project}
-              // next={next}
-              // prev={prev}
-              // facebook={facebook}
-              theme={theme}
-            />
-          </Article>
-        )}
+        {theme => <ProjectLayout theme={theme} project={project} />}
       </ThemeContext.Consumer>
-
-      <Seo data={project}  />
+      <Seo data={project} />
     </React.Fragment>
   );
 };
@@ -61,6 +49,8 @@ export const projectQuery = graphql`
       frontmatter {
         title
         category
+        brief
+        url
         cover {
           childImageSharp {
             resize(width: 300) {
@@ -70,12 +60,14 @@ export const projectQuery = graphql`
         }
       }
     }    
-    site {
-      siteMetadata {
-        facebook {
-          appId
-        }
-      }
-    }
   }
 `;
+
+
+//site {
+// siteMetadata {
+//   facebook {
+//     appId
+//   }
+// }
+//} 

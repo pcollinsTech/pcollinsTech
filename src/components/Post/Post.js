@@ -6,7 +6,6 @@ import asyncComponent from "../AsyncComponent";
 import Headline from "../Article/Headline";
 import Bodytext from "../Article/Bodytext";
 import Meta from "./Meta";
-// import Author from "./Author";
 import NextPrev from "./NextPrev";
 
 const Share = asyncComponent(() =>
@@ -23,10 +22,8 @@ const Post = props => {
     post: {
       html,
       fields: { prefix, slug },
-      frontmatter: { title, author, category }
+      frontmatter: { title, category }
     },
-    // authornote,
-    // facebook,
     next: nextPost,
     prev: prevPost,
     theme
@@ -50,8 +47,6 @@ const Post = props => {
 
 Post.propTypes = {
   post: PropTypes.object.isRequired,
-  authornote: PropTypes.string.isRequired,
-  facebook: PropTypes.object.isRequired,
   next: PropTypes.object,
   prev: PropTypes.object,
   theme: PropTypes.object.isRequired

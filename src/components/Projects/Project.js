@@ -3,81 +3,46 @@ import React from 'react'
 
 import Item from './Item'
 
-const Project = ({theme, projectImages}) => {
-    const items = [
-      {
-        name: "Too Good To Be",
-        categories: ["Wordpress", "E-Commerce"],
-        url: "https://toogoodtobe.co.uk",
-        image: projectImages.tooGoodToBe
-      },
-      {
-        name: "St James Studio",
-        categories: ["Wordpress"],
-        url: "https://stjames.studio",
-        image: projectImages.stJamesStudio
-      },
-      {
-        name: "Balincourt",
-        categories: ["Wordpress"],
-        url: "https://balincourt.co.uk",
-        image: projectImages.balincourt
-      },
-      {
-        name: "Wax Hive Wraps",
-        categories: ["Wordpress", "E-Commerce", "Design", "Logo"],
-        url: "https://waxhivewraps.com",
-        image: projectImages.waxHiveWraps
-      },
-      {
-        name: "Digital Works Agency",
-        categories: ["Wordpress"],
-        url: "https://digitalworksagency.com",
-        image: projectImages.digitalWorksAgency
-      },
-      {
-        name: "EI Projects",
-        categories: ["Wordpress"],
-        url: "https://eiprojects.co.uk",
-        image: projectImages.eiProjects
-      }
-    ];
+const Project = props => {
+  const {theme, projects, location} = props
+  const background = (location.pathname === "/projects") ? "white" : "blue";
   return (
-      <React.Fragment>
-          <div id="projects">
-            <h2>Projects I've worked on</h2>
-            <div className="container">
-                    {
-                        items.map((item,index)=>{
-                            return <Item project={item} theme={theme} key={index}/>
-                        })
-                    }
-            </div>
-          
-          </div>
+    <React.Fragment>
+      <div id="projects" className={background}>
+        <h2>Some projects I've worked on in the past</h2>
+        <div className="container">
+          {projects.map((project, index) => {
+            return <Item project={project.node} theme={theme} key={index} location={location}/>;
+          })}
+        </div>
+      </div>
 
-          {/* --- STYLES --- */}
-          <style jsx>{`
-          #projects{
-              background-color: ${theme.color.brand.primary};
-              padding: 50px;
-          }
-          h2 {
-            text-align: center;
-            font-size: 30px;
-            color:white;
-            margin-bottom:40px;
-          }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top:1.5rem;
+      {/* --- STYLES --- */}
+      <style jsx>{`
+        #projects {
+          padding: 70px 50px;
         }
-        
-        
+        .white {
+          background-color: #ffffff;
+          color: ${theme.color.brand.primary};
+        }
+        .blue {
+          background-color: ${theme.color.brand.primary};
+          color:white;
+        }
+        h2 {
+          text-align: center;
+          font-size: 30px;
+          margin-bottom: 3em;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          margin-top: 1.5rem;
+        }
       `}</style>
-      </React.Fragment>
-  )
+    </React.Fragment>
+  );
 }
 export default Project;

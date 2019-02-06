@@ -2,7 +2,6 @@ import React from "react";
 import { ThemeContext } from "../layouts";
 import Article from "../components/Article";
 import Headline from "../components/Article/Headline";
-import { FaHandshake } from "react-icons/fa";
 import Seo from "../components/Seo";
 
 
@@ -21,7 +20,7 @@ const CharityPage = () => {
                   <p className="paragraph">
                     Hello! If you are new to this, then "Charity Tuesday" is an initiative of
                     mine where I offer my skills and services to charities or non-profit
-                    organisations in and around Poole / Bounemouth. I do this on the first
+                    organisations in and around Poole / Bournemouth. I do this on the first
                     Tuesday of every month.
                   </p>
                   <h3>What is it?</h3>

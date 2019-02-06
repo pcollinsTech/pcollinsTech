@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
 import React from "react";
 import { graphql } from "gatsby";
-import { ThemeContext } from "../src/layouts";
-import Blog from "../src/components/Blog";
-import Hero from "../src/components/Hero";
-import Seo from "../src/components/Seo";
-import Services from "../src/components/Services";
+import { ThemeContext } from "../layouts";
+import Blog from "../components/Blog";
+import Seo from "../components/Seo";
 
 
 class BlogPage extends React.Component {

@@ -7,12 +7,12 @@ import marketing from "../../images/png/marketing.png";
 import optimised from "../../images/png/optimised.png";
 import responsive from "../../images/png/responsive.png";
 import seo from "../../images/png/seo.png";
-// import webApp from "../../images/png/webApp.png";
 
 const Services = props => {
     const { theme } = props;
 
-    return <React.Fragment>
+    return (
+      <React.Fragment>
         <section className="services">
           <h2>Services</h2>
           <div className="container">
@@ -26,11 +26,11 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={hosting} alt="hosting"/>
+              <img src={hosting} alt="hosting" />
               <h2>Hosting</h2>
               <p>
-                Does your new website or webs application need a home? I can offer Domain name and hosting services
-                that are reliable, affordable and secure.
+                Does your new website or webs application need a home? I can offer Domain name
+                and hosting services that are reliable, affordable and secure.
               </p>
             </div>
             <div className="item">
@@ -51,7 +51,7 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={responsive} alt="responsive"/>
+              <img src={responsive} alt="responsive" />
               <h2>Responsive Design</h2>
               <p>
                 All of my recent websites are responsive. This means that the layout changes and
@@ -60,13 +60,12 @@ const Services = props => {
               </p>
             </div>
             <div className="item">
-              <img src={seo} alt="seo"/>
+              <img src={seo} alt="seo" />
               <h2>Seo</h2>
               <p>
-                My websites are designed to be search-engine friendly. They often
-                achieve excellent rankings within a few weeks of launch. For more
-                competitive markets I can recommend an SEO specialist to give you a little extra
-                help.
+                My websites are designed to be search-engine friendly. They often achieve
+                excellent rankings within a few weeks of launch. For more competitive markets I
+                can recommend an SEO specialist to give you a little extra help.
               </p>
             </div>
           </div>
@@ -75,7 +74,7 @@ const Services = props => {
         {/* --- STYLES --- */}
         <style jsx>{`
           .services {
-            margin: 20px auto;
+            margin: 70px auto;
             text-align: center;
             h2 {
               font-size: ${theme.font.size.xxl};
@@ -91,7 +90,7 @@ const Services = props => {
             .item {
               background: white;
               border: 1px solid grey;
-              border-radius: 20px;
+              border-radius: ${theme.size.radius.default};
               margin: 10px auto;
               padding: ${theme.space.default};
               max-width: 335px;
@@ -110,15 +109,23 @@ const Services = props => {
             }
           }
 
-          @from-width tablet {.container {
+          @from-width tablet {
+            .container {
               padding: ${`calc(${theme.space.default}) calc(${theme.space.default} * 2)`};
               max-width: ${theme.text.maxWidth.tablet};
-            }}
-          @from-width desktop {.container {
-              padding: ${`calc(${theme.space.default} * 2 ) 0 calc(${theme.space.default} * 2)`};
+            }
+          }
+          @from-width desktop {
+            .container {
+              padding: ${`calc(${theme.space.default} * 2 ) 0 calc(${
+                theme.space.default
+              } * 2)`};
               max-width: ${theme.text.maxWidth.homepage};
-            }}`}</style>
-      </React.Fragment>;
+            }
+          }
+        `}</style>
+      </React.Fragment>
+    );
 };
 
 Services.propTypes = {

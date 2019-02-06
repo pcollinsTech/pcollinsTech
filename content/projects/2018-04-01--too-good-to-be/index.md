@@ -1,14 +1,22 @@
 ---
 title: Too Good To Be
-category: "Wordpress"
-cover: photo-1489824904134-891ab64532f1.jpg
+category: Wordpress, WooCommerce
+cover: screenshot.jpg
+brief: Gluten Free Pie's
+url: https://toogoodtobe.co.uk
 ---
-![toogoodtobe.co.uk](./photo-1489824904134-891ab64532f1.jpg)
-Too Good To Be, is a sister company of Ocado, which specialises in Gluten free products for their clients.
+###*" We really are Too Good to be Gluten Free a chilled range of delicious gluten free pastries and desserts. "*
+
 
 ##The Brief
-Their website needed a complete overhall and redesign. They needed to capture their users attention and improve the customers journey, from browsing through the products and converting them to paying customers. 
+
+Digital Works Agency approached me to develop the Too Good To Be website. They wanted to increase their sales 
+and attract more customers to their products pages. The user journey from products page to checkout, needed to 
+be improved to prevent the number of baskets left unfulfilled due to people getting lost along the way to checkout.
 
 
 ##The Result
-I worked closely with [Digital Works Agency](https://digitalworksagency.com) on the project to achieve the end result. The new site has increased sales volumes leaving the brand happy with their new website.
+
+Too Good To Be are extremely happy with their new website. They've seen an increase in sales and a decrease in the number 
+of baskets being left unfulfilled.  
+

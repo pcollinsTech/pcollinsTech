@@ -25,7 +25,7 @@ const AboutPage = props => {
                   <img src={fire} className="avatar" />
                 </div>
                 <p className="aboutParagraph">
-                  work mostly in Bournemouth, whilst hopping to and from Belfast, Northern Ireland
+                  I work mostly in Bournemouth, whilst hopping to and from Belfast, Northern Ireland
                   (where I'm from). Before I started out building websites, chatbots and apps, I
                   was working as a chef in the french alps.
                 </p>
