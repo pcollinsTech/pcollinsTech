@@ -2,6 +2,7 @@
 title: Balincourt Guest House
 category: "Wordpress"
 cover: screenshot.jpg
+screen: laptop.jpg
 brief: Bournemouth Guest House
 url: https://balincourt.co.uk
 ---

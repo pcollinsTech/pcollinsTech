@@ -2,6 +2,7 @@
 title: Too Good To Be
 category: Wordpress, WooCommerce
 cover: screenshot.jpg
+screen: laptop.jpg
 brief: Gluten Free Pie's
 url: https://toogoodtobe.co.uk
 ---

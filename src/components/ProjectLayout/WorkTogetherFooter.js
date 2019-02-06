@@ -18,17 +18,9 @@ const WorkTogetherFooter = ({theme}) => {
               <h2>Let's Work Together</h2>
               <p>
                 If you like my work and want to work together on your next project, get in
-                touch!{" "}
+                touch bellow!
               </p>
-              <br />
-              <p>
-                <strong>M:</strong>
-                <a href="tel:07944305605">07944305605</a>
-              </p>
-              <p>
-                <strong>E:</strong>
-                <a href="mailto:phil@pcollins.tech">phil@pcollins.tech</a>
-              </p>
+              
             </div>
           </div>
         </div>
@@ -38,18 +30,17 @@ const WorkTogetherFooter = ({theme}) => {
           .container {
             margin: 0 auto;
             align-content: center;
+            padding: 0 3em;
           }
           .row {
             margin: 0 auto;
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
             margin-top: 2em;
-            max-width: ${theme.text.maxWidth.homepage};
+            width: 600px;
           }
           h2 {
             font-size: 2rem;
-            color: ${theme.color.brand.secondary};
+            color: ${theme.color.brand.primary};
             padding-bottom: 1rem;
           }
           .contact {
@@ -59,10 +50,10 @@ const WorkTogetherFooter = ({theme}) => {
             float: left;
             border-radius: 65% 75%;
             display: inline-block;
-            height: 50px;
+            height: 90px;
             margin: 5px 20px 0 0;
             overflow: hidden;
-            width: 50px;
+            width: 90px;
           }
           .avatar img {
             width: 100%;

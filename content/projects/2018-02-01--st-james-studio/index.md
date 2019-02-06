@@ -2,6 +2,7 @@
 title: St James Studio
 category: "Wordpress"
 cover: screenshot.jpg
+screen: laptop.jpg
 brief: Creative Communications Agency
 url: https://stjames.studio
 ---

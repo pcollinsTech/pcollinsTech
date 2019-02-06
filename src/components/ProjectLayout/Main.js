@@ -1,17 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { ScreenWidthContext } from "../../layouts";
-
-import Iframe from "./Iframe";
+import Img from 'gatsby-image'
 import Bodytext from "./Bodytext";
 import Headline from "./Headline";
 import Meta from "./Meta";
 import WorkTogetherFooter from "./WorkTogetherFooter"
+import laptop from "../../images/png/theme-laptop-full.png";
 
 
 const Main = props => {  
   console.log("Main.js",props)
-  const { 
+  const {
     theme,
     project: {
       html,
@@ -19,27 +18,21 @@ const Main = props => {
         url,
         title,
         category,
+        screen: {
+          children: [{ fluid }]
+        }
       }
     }
-   } = props;
+  } = props;
   return (
     <React.Fragment>
       <section className={`content`}>
         <Headline title={title} theme={theme} />
         <Meta category={category} theme={theme} />
         <div className="container">
-          {/* <ScreenWidthContext.Consumer> */}
-            {/* {width => {
-              width > 1024 ? (
-                ""
-              ) : (
-              );
-            }} */}
-                <div className="frame">
-                  <Iframe project={url} theme={theme} />
-                </div>
-          {/* </ScreenWidthContext.Consumer> */}
-
+          <div className="frame">
+            <Img fluid={fluid} />
+          </div>
           <div className="text">
             <Bodytext html={html} theme={theme} />
           </div>
@@ -51,22 +44,20 @@ const Main = props => {
 
       {/* --- STYLES --- */}
       <style jsx>{`
-        .footer {
-          padding: ${theme.space.inset.default};
-        }
-        .content {
-          margin: 0 auto;
-        }
-        .text {
-          padding: ${theme.space.inset.default};
-        }
         .container {
+          padding: ${`calc(${theme.space.default}) calc(${theme.space.default} * 2)`};
           display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+        }
+        .frame {
+          flex: 2;
+        }
+
+        .footer {
+          padding: ${`calc(${theme.space.default}) calc(${theme.space.default} * 2)`};
         }
         @from-width tablet {
-          .frame {
-            display: none;
-          }
           .content {
             padding: ${`calc(${theme.space.default}) calc(${theme.space.default} * 2)`};
           }
@@ -74,9 +65,10 @@ const Main = props => {
         @from-width desktop {
           .frame {
             flex: 2;
-            margin-left: -11%;
-            display: block;
+            max-width: 60%;
+            padding: 80px 100px 100px;
           }
+
           .text {
             margin: 50px;
             flex: 1;

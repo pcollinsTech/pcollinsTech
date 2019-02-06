@@ -24,6 +24,10 @@ const Bodytext = props => {
           }
 
           :global(h3) {
+            padding:20px;
+            text-align:center;
+            background-color: ${theme.color.brand.secondary};
+            color: white;
             font-size: ${theme.font.size.m};
             line-height: ${theme.font.lineHeight.m};
           }

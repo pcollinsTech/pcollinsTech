@@ -38,30 +38,41 @@ export default ProjectTemplate;
 
 //eslint-disable-next-line no-undef
 export const projectQuery = graphql`
-  query ProjectBySlug($slug: String!) {
-    project: markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      html
-      fields {
-        slug
-        prefix
-      }
-      frontmatter {
-        title
-        category
-        brief
-        url
-        cover {
-          childImageSharp {
-            resize(width: 300) {
-              src
-            }
-          }
-        }
-      }
-    }    
-  }
-`;
+         query ProjectBySlug($slug: String!) {
+           project: markdownRemark(fields: { slug: { eq: $slug } }) {
+             id
+             html
+             fields {
+               slug
+               prefix
+             }
+             frontmatter {
+               title
+               category
+               brief
+               url
+               cover {
+                 children {
+                   ... on ImageSharp {
+                     fluid(maxWidth: 800, maxHeight: 400) {
+                       ...GatsbyImageSharpFluid_withWebp
+                     }
+                   }
+                 }
+               }
+               screen {
+                 children {
+                   ... on ImageSharp {
+                     fluid(maxWidth: 750, maxHeight: 450) {
+                       ...GatsbyImageSharpFluid_withWebp
+                     }
+                   }
+                 }
+               }
+             }
+           }
+         }
+       `;
 
 
 //site {

@@ -2,6 +2,7 @@
 title: Wax Hive Wraps
 category: Wordpress
 cover: screenshot.jpg
+screen: laptop.jpg
 brief: Bees Wax Wraps
 url: https://waxhivewraps.com
 ---

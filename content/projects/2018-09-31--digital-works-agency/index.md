@@ -2,6 +2,7 @@
 title: Digital Works Agency
 category: "Wordpress"
 cover: screenshot.jpg
+screen: laptop.jpg
 brief: Creative Digital Marketing Agency
 url: https://digitalworksagency.com
 ---

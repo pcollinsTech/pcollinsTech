@@ -2,6 +2,7 @@
 title: Ei Projects
 category: "Wordpress"
 cover: screenshot.jpg
+screen: laptop.jpg
 brief: Interior Fit-out Specialists
 url: https://eiprojects.co.uk
 ---
