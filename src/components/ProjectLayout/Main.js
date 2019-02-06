@@ -3,9 +3,7 @@ import PropTypes from "prop-types";
 import Img from 'gatsby-image'
 import Bodytext from "./Bodytext";
 import Headline from "./Headline";
-import Meta from "./Meta";
 import WorkTogetherFooter from "./WorkTogetherFooter"
-import { Link } from 'gatsby'
 
 const Main = props => {  
   console.log("Main.js",props)
@@ -27,7 +25,6 @@ const Main = props => {
     <React.Fragment>
       <section className={`content`}>
         <Headline title={title} theme={theme} />
-        <Meta category={category} theme={theme} />
         <div className="container">
           <div className="frame">
             <Img fluid={fluid} />
