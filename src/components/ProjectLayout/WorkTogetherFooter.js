@@ -17,10 +17,9 @@ const WorkTogetherFooter = ({theme}) => {
             <div className="contact">
               <h2>Let's Work Together</h2>
               <p>
-                If you like my work and want to work together on your next project, get in
-                touch bellow!
+                If you like my work and want to work together on your next project, get in touch
+                bellow!
               </p>
-              
             </div>
           </div>
         </div>
@@ -36,7 +35,7 @@ const WorkTogetherFooter = ({theme}) => {
             margin: 0 auto;
             display: flex;
             margin-top: 2em;
-            display:flex;
+            display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
           }
@@ -46,7 +45,9 @@ const WorkTogetherFooter = ({theme}) => {
             padding-bottom: 1rem;
           }
           .contact {
-            flex:4;
+            flex: 4;
+            text-align: center;
+            min-width: 310px;
           }
           .avatar {
             float: left;
