@@ -30,13 +30,15 @@ const WorkTogetherFooter = ({theme}) => {
           .container {
             margin: 0 auto;
             align-content: center;
-            padding: 0 3em;
+            padding: 0 1.9em;
           }
           .row {
             margin: 0 auto;
             display: flex;
             margin-top: 2em;
-            width: 600px;
+            display:flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
           }
           h2 {
             font-size: 2rem;
@@ -44,7 +46,7 @@ const WorkTogetherFooter = ({theme}) => {
             padding-bottom: 1rem;
           }
           .contact {
-            width: 90%;
+            flex:4;
           }
           .avatar {
             float: left;

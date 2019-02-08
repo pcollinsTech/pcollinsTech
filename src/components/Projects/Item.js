@@ -53,7 +53,7 @@ const Item = (props) => {
         }
         .item {
           position: relative;
-          width: 32%;
+          width: 92%;
           margin-bottom: 18px;
         }
         .project {
@@ -86,7 +86,7 @@ const Item = (props) => {
         }
         @from-width tablet {
           .item {
-            max-width: 95%;
+            max-width: ;
           }
         }
         @from-width desktop {
