@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: "Pcollins.tech - Freelance Developer", // <title>
-  shortSiteTitle: "Pcollins.tech - Freelance Developer Bournemouth ", // <title> ending for posts and pages
+  shortSiteTitle: "Pcollins.tech - Freelance Developer", // <title> ending for posts and pages
   siteDescription:
     "Freelance Developer based in Bournemouth. Creating awesome  web experiences for the next generation of consumer-facing companies.",
   siteUrl: "https://pcollins.tech",
