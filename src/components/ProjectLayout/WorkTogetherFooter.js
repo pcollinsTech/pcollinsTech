@@ -36,7 +36,7 @@ const WorkTogetherFooter = ({theme}) => {
             display: flex;
             margin-top: 2em;
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-wrap: wrap;
           }
           h2 {
@@ -45,12 +45,10 @@ const WorkTogetherFooter = ({theme}) => {
             padding-bottom: 1rem;
           }
           .contact {
-            flex: 4;
             text-align: center;
             min-width: 310px;
           }
           .avatar {
-            float: left;
             border-radius: 65% 75%;
             display: inline-block;
             height: 90px;
