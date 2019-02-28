@@ -32,6 +32,7 @@ class IndexPage extends React.Component {
         },
       }
     } = this.props;
+    const trimedPosts = posts.slice(0, 3);
 
     const backgrounds = {
       desktop,
@@ -61,7 +62,8 @@ class IndexPage extends React.Component {
         </ThemeContext.Consumer>
         
         <ThemeContext.Consumer>
-          {theme => <Blog posts={posts} theme={theme} />}
+        {theme => <Blog posts={trimedPosts} theme={theme} />}
+            
         </ThemeContext.Consumer>
 
         <Seo />
