@@ -23,7 +23,6 @@ const Latest = props => {
             return <Item key={slug} post={node} theme={theme} />;
           })}
         </div>
-        <a href="/blog">Read More...</a>
         {/* --- STYLES --- */}
         <style jsx>{`
         h2 {

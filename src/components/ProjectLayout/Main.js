@@ -6,7 +6,6 @@ import Headline from "./Headline";
 import WorkTogetherFooter from "./WorkTogetherFooter"
 
 const Main = props => {  
-  console.log("Main.js",props)
   const {
     theme,
     project: {

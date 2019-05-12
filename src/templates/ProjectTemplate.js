@@ -18,7 +18,6 @@ const ProjectTemplate = props => {
     // projectContext: { next, prev }
   } = props;
 
-  console.log("projecttemplate", project)
   return (
     <React.Fragment>
       <ThemeContext.Consumer>
