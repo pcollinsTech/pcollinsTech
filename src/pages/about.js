@@ -74,7 +74,7 @@ const AboutPage = props => {
                 </p>
                 <p className="aboutParagraph">
                   If you are looking to get your business online or want to find out more on how
-                  you can add functionalit to an existing website yourself, get in touch! I'm be
+                  you can add functionality to an existing website yourself, get in touch! I'm be
                   more than happy to help!
                 </p>
               </div>
