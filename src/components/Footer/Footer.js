@@ -52,7 +52,7 @@ const Footer = props => {
                   </span>
                 </a>
                 <a
-                  href="https://www.twitter.com/pcollins.tech/"
+                  href="https://www.twitter.com/pcollinsTech/"
                   target="__blank"
                   className="social"
                 >
