@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Contact = props => {
-  const { html, theme } = props;
+  const { theme } = props;
 
   return (
     <React.Fragment>

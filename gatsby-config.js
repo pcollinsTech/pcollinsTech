@@ -51,7 +51,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://pcollins.tech`
+        siteUrl: `https://www.pcollins.tech`
       }
     },
     {
