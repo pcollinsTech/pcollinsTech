@@ -24,7 +24,7 @@ const Latest = props => {
           })}
         </div>
 
-        <style jsx>{`
+        <style jsx="true">{`
         h2 {
           font-size: 30px;
           text-align: center;
