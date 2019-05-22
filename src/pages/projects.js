@@ -20,7 +20,6 @@ class ProjectPage extends React.Component {
       }
     } = this.props;
 
-
     return <React.Fragment>
         <div className="blue">
         
@@ -53,12 +52,11 @@ class ProjectPage extends React.Component {
 }
 
 ProjectPage.propTypes = {
-//   data: PropTypes.object.isRequired
+  data: PropTypes.object.isRequired
 };
 
 export default ProjectPage;
 
-//eslint-disable-next-line no-undef
 export const query = graphql`
   query ProjectQuery {
     projects: allMarkdownRemark(

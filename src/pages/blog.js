@@ -17,8 +17,6 @@ class BlogPage extends React.Component {
     const {
       data: {
         posts: { edges: posts = [] },
-        
-        
       }
     } = this.props;
 

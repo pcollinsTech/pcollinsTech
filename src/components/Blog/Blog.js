@@ -23,7 +23,7 @@ const Latest = props => {
             return <Item key={slug} post={node} theme={theme} />;
           })}
         </div>
-        {/* --- STYLES --- */}
+
         <style jsx>{`
         h2 {
           font-size: 30px;
@@ -84,7 +84,7 @@ const Latest = props => {
             return <Item key={slug} post={node} theme={theme} />;
           })}
         </div>
-        {/* --- STYLES --- */}
+
         <style jsx>{`
         h2 {
           font-size: 30px;
@@ -132,7 +132,7 @@ const Blog = props => {
       <main className="main" id="blog">
         <Latest props={props} />
       </main>
-      {/* --- STYLES --- */}
+
       <style jsx>{`
         .main {
           padding: 70px 0 ;

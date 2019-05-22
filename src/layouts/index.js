@@ -107,7 +107,6 @@ class Layout extends React.Component {
                     <Contact theme={this.state.theme} />
                     <Footer html={footnoteHTML} theme={this.state.theme} />
 
-                    {/* --- STYLES --- */}
                     <style jsx>{`
                       main {
                         min-height: 80vh;

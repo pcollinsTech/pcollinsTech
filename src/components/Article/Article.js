@@ -8,7 +8,6 @@ const Article = props => {
     <React.Fragment>
       <article className="article">{children}</article>
 
-      {/* --- STYLES --- */}
       <style jsx>{`
         .article {
           padding: ${theme.space.inset.default};

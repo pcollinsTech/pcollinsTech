@@ -28,10 +28,7 @@ const CategoryTemplate = props => {
                 {category}
               </Headline>
               <p className="meta">
-                There {totalCount > 1 ? "are" : "is"} <strong>{totalCount}</strong> post{totalCount >
-                1
-                  ? "s"
-                  : ""}{" "}
+                There {totalCount > 1 ? "are" : "is"} <strong>{totalCount}</strong> post{totalCount > 1 ? "s" : ""}{" "}
                 in the category.
               </p>
               <List edges={edges} theme={theme} />
@@ -52,7 +49,6 @@ CategoryTemplate.propTypes = {
 
 export default CategoryTemplate;
 
-// eslint-disable-next-line no-undef
 export const categoryQuery = graphql`
   query PostsByCategory($category: String) {
     allMarkdownRemark(

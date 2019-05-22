@@ -13,9 +13,6 @@ const PostTemplate = props => {
     data: {
       post,
       authornote: { html: authorNote },
-      site: {
-        siteMetadata: { facebook }
-      }
     },
     pageContext: { next, prev }
   } = props;
@@ -30,7 +27,6 @@ const PostTemplate = props => {
               next={next}
               prev={prev}
               authornote={authorNote}
-              // facebook={facebook}
               theme={theme}
             />
           </Article>
@@ -49,7 +45,6 @@ PostTemplate.propTypes = {
 
 export default PostTemplate;
 
-//eslint-disable-next-line no-undef
 export const postQuery = graphql`
   query PostBySlug($slug: String!) {
     post: markdownRemark(fields: { slug: { eq: $slug } }) {

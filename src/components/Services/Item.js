@@ -6,84 +6,84 @@ const Item = props => {
     const { theme, item: { label, to, icon: Icon } = {}, onClick } = props;
 
     return <React.Fragment>
-        <li className={"hiddenItem" in props ? "hiddenItem" : "item"} key={label}>
-            <Link to={to} className={"hiddenItem" in props ? "inHiddenItem" : ""} onClick={onClick} data-slug={to}>
-                {Icon && <Icon />} {label}
-            </Link>
-        </li>
+      <li className={"hiddenItem" in props ? "hiddenItem" : "item"} key={label}>
+        <Link to={to} className={"hiddenItem" in props ? "inHiddenItem" : ""} onClick={onClick} data-slug={to}>
+          {Icon && <Icon />} {label}
+        </Link>
+      </li>
 
-        {/* --- STYLES --- */}
-        <style jsx>{`
-        .item,
-        .showItem {
-          background: transparent;
-          transition: all ${theme.time.duration.default};
+      <style jsx>{`
+      .item,
+      .showItem {
+        background: transparent;
+        transition: all ${theme.time.duration.default};
+        display: flex;
+        align-items: center;
+
+        :global(a) {
+          padding: ${theme.space.inset.s};
           display: flex;
           align-items: center;
-
-          :global(a) {
-            padding: ${theme.space.inset.s};
-            display: flex;
-            align-items: center;
-          }
-
-          :global(svg) {
-            margin: 0 ${theme.space.inset.xs} 0 0;
-            opacity: 0.3;
-          }
         }
 
-        :global(.itemList .hideItem) {
-          display: none;
+        :global(svg) {
+          margin: 0 ${theme.space.inset.xs} 0 0;
+          opacity: 0.3;
+        }
+      }
+
+      :global(.itemList .hideItem) {
+        display: none;
+      }
+
+      @from-width desktop {.item {
+        :global(a) {
+          color: ${theme.text.color.primary};
+          padding: ${theme.space.inset.s};
+          transition: all ${theme.time.duration.default};
+          border-radius: ${theme.size.radius.small};
         }
 
-        @from-width desktop {.item {
-            :global(a) {
-              color: ${theme.text.color.primary};
-              padding: ${theme.space.inset.s};
-              transition: all ${theme.time.duration.default};
-              border-radius: ${theme.size.radius.small};
-            }
+        :global(.homepage):not(.fixed) & :global(a) {
+          color: ${theme.color.neutral.white};
+        }
 
-            :global(.homepage):not(.fixed) & :global(a) {
-              color: ${theme.color.neutral.white};
-            }
+        :global(a:hover) {
+          color: ${theme.color.brand.secondary};
+          background: color(white alpha(-60%));
+        }
 
-            :global(a:hover) {
-              color: ${theme.color.brand.secondary};
-              background: color(white alpha(-60%));
-            }
+        :global(svg) {
+          transition: all ${theme.time.duration.default};
+        }
 
-            :global(svg) {
-              transition: all ${theme.time.duration.default};
-            }
+        &:hover :global(svg) {
+          fill: ${theme.color.brand.secondary};
+          opacity: 1;
 
-            &:hover :global(svg) {
-              fill: ${theme.color.brand.secondary};
-              opacity: 1;
-
-              :global(.hero) & :global(svg) {
-                fill: green;
-              }
-            }
+          :global(.hero) & :global(svg) {
+            fill: green;
           }
+        }
+      }
 
-          .showItem {
-            display: none;
+      .showItem {
+        display: none;
+      }
+
+      .hiddenItem {
+        text-align: left;
+        padding: ${theme.space.xs};
+
+        & :global(a.inHiddenItem) {
+          color: ${theme.text.color.primary};
+          &:hover {
+            color: ${theme.color.brand.primary};
           }
-
-          .hiddenItem {
-            text-align: left;
-            padding: ${theme.space.xs};
-
-            & :global(a.inHiddenItem) {
-              color: ${theme.text.color.primary};
-              &:hover {
-                color: ${theme.color.brand.primary};
-              }
-            }
-          }}`}</style>
-    </React.Fragment>;
+        }
+      }
+    }`}</style>
+  </React.Fragment>;
 };
 
 Item.propTypes = {

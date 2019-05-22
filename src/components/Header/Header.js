@@ -70,7 +70,6 @@ class Header extends React.Component {
           <div className="sensor" />
         </VisibilitySensor>
 
-        {/* --- STYLES --- */}
         <style jsx>{`
           .header {
             align-items: center;

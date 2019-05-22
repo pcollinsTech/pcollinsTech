@@ -8,7 +8,6 @@ const Headline = props => {
     <React.Fragment>
       {title ? <h2>{title}</h2> : <h2>{children}</h2>}
 
-      {/* --- STYLES --- */}
       <style jsx>{`
         h2 {
           font-size: ${theme.font.size.xxl};

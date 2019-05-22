@@ -85,6 +85,7 @@ const AboutPage = props => {
       <Seo  />
       <ThemeContext.Consumer>
         {theme => (
+          
           <style jsx="true">{`
             img {
               margin: 0 10px 0px 10px;
