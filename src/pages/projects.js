@@ -3,7 +3,7 @@ import { graphql } from "gatsby";
 import { ThemeContext } from "../layouts";
 import Projects from "../components/Projects";
 import Seo from "../components/Seo";
-
+import PropTypes from "prop-types";
 
 class ProjectPage extends React.Component {
   separator = React.createRef();
@@ -16,17 +16,17 @@ class ProjectPage extends React.Component {
     const {
       location,
       data: {
-        projects: { edges: projects = [] },
+        projects: { edges: projects = [] }
       }
     } = this.props;
 
-    return <React.Fragment>
+    return (
+      <React.Fragment>
         <div className="blue">
-        
           <div className="gap" />
-            
+
           <ThemeContext.Consumer>
-          {theme => <Projects projects={projects} theme={theme} location={location}/>}
+            {theme => <Projects projects={projects} theme={theme} location={location} />}
           </ThemeContext.Consumer>
 
           <Seo />
@@ -39,15 +39,18 @@ class ProjectPage extends React.Component {
           .gap {
             margin: 80px;
           }
-          h2, p {
+          h2,
+          p {
             text-align: center;
             margin-bottom: 20px;
           }
           hr {
             margin: 0;
             border: 0;
-          }`}</style>
-      </React.Fragment>;
+          }
+        `}</style>
+      </React.Fragment>
+    );
   }
 }
 
@@ -86,16 +89,14 @@ export const query = graphql`
         }
       }
     }
-    
-    
   }
 `;
 
 //hero-background
-    // site {
-    //   siteMetadata {
-    //     facebook {
-    //       appId
-    //     }
-    //   }
-    // }
+// site {
+//   siteMetadata {
+//     facebook {
+//       appId
+//     }
+//   }
+// }
