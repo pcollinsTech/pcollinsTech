@@ -51,20 +51,12 @@ const Footer = props => {
                     <FaInstagram />
                   </span>
                 </a>
-                <a
-                  href="https://www.twitter.com/pcollinsTech/"
-                  target="__blank"
-                  className="social"
-                >
+                <a href="https://www.twitter.com/pcollinsTech/" target="__blank" className="social">
                   <span className="iconSocial">
                     <FaTwitter />
                   </span>
                 </a>
-                <a
-                  href="https://www.github.com/pcollinsTech/"
-                  target="__blank"
-                  className="social"
-                >
+                <a href="https://www.github.com/pcollinsTech/" target="__blank" className="social">
                   <span className="iconSocial">
                     <FaGithub />
                   </span>

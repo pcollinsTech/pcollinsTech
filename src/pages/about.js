@@ -24,8 +24,8 @@ const AboutPage = props => {
                   <img src={fire} className="avatar" />
                 </div>
                 <p className="aboutParagraph">
-                  I work mostly in Belfast, whilst hopping to and from England. Before I started out
-                  building websites, chatbots and apps, I was working as a chef in the french alps.
+                  Hi! Before I started out building websites, chatbots and apps, I was working as a
+                  chef in the french alps.
                 </p>
                 <p className="aboutParagraph">
                   Yep, you read that right. A pretty huge career change, but i pulled it off. I was
