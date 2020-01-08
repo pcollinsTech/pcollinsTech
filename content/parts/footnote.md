@@ -2,5 +2,4 @@
 title: footnote
 ---
 
-
-* Copyright 2019. All Rights Reserved.
+- Copyright 2020. All Rights Reserved.
