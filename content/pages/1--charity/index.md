@@ -3,11 +3,11 @@ title: Charity Tuesday
 menuTitle: Chairty work
 ---
 
-Hello! If you are new to this, then "Charity Tuesday" is an initiative of mine where I offer my skills and services to charities or non-profit organisations in and around Poole / Bounemouth. I do this on the first Tuesday of every month.
+Hello! If you are new to this, then "Charity Tuesday" is an initiative of mine where I offer my skills and services to charities or non-profit organisations in and around Belfast. I do this on the first Tuesday of every month.
 
 ### What is it?
 
-The charities I work for will have my skills and expertise, in house for 8 hours. I’ll advise, critique and generally help out with Web Design, Web Development, SEO and all things digital.
+The charities I work for will have my skills and expertise, in house for 7 hours. I’ll advise, critique and generally help out with Web Design, Web Development, SEO and all things digital.
 
 I am looking for new charities to work with in 2019, and help them with their online presence. If you work for a charity, or know someone who does, please get in touch.
 
